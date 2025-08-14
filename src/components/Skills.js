@@ -1,0 +1,179 @@
+import React from "react";
+import {
+  Container,
+  Typography,
+  Box,
+  Grid,
+  Card,
+  CardContent,
+  useTheme,
+  useMediaQuery,
+  Chip,
+} from "@mui/material";
+import {
+  Html as HtmlIcon,
+  Css as CssIcon,
+  Javascript as JavascriptIcon,
+  ViewInAr as ReactIcon,
+  DataObject as TypeScriptIcon,
+  Storage as ReduxIcon,
+  Psychology as GenAIIcon,
+  AccountTree as LangChainIcon,
+  Functions as NumPyIcon,
+  TableChart as PandasIcon,
+  AutoAwesome as PyTorchIcon,
+} from "@mui/icons-material";
+
+const Skills = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
+  const categorizedSkills = [
+    {
+      category: "Core Frontend",
+      items: [
+        { name: "React.js", color: "#61DAFB", icon: <ReactIcon /> },
+        { name: "TypeScript", color: "#3178C6", icon: <TypeScriptIcon /> },
+        { name: "JavaScript", color: "#F7DF1E", icon: <JavascriptIcon /> },
+        { name: "Redux", color: "#764ABC", icon: <ReduxIcon /> },
+        { name: "HTML5", color: "#E34F26", icon: <HtmlIcon /> },
+        { name: "CSS3", color: "#1572B6", icon: <CssIcon /> },
+      ],
+    },
+    {
+      category: "AI / ML",
+      items: [
+        { name: "GenAI", color: "#3776AB", icon: <GenAIIcon /> },
+        { name: "Python", color: "#00DC82", icon: <LangChainIcon /> },
+        { name: "Pandas", color: "#3776AB", icon: <PandasIcon /> },
+        { name: "NumPy", color: "#3776AB", icon: <NumPyIcon /> },
+        { name: "NLP", color: "#00DC82", icon: <LangChainIcon /> },
+        { name: "PyTorch", color: "#EE4C2C", icon: <PyTorchIcon /> },
+        { name: "LangChain", color: "#00DC82", icon: <LangChainIcon /> },
+      ],
+    },
+  ];
+
+  // Single clean view: categorized chips
+
+  return (
+    <Box
+      id="skills"
+      sx={{
+        py: 6,
+        background:
+          "linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)",
+        position: "relative",
+        "&::before": {
+          content: '""',
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background:
+            "radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%)",
+          pointerEvents: "none",
+        },
+      }}
+    >
+      <Container maxWidth="lg">
+        <Box sx={{ textAlign: "center", mb: 5, position: "relative" }}>
+          <Typography
+            variant="h3"
+            component="h2"
+            sx={{
+              fontWeight: 800,
+              mb: 2,
+              background:
+                "linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              fontSize: { xs: "2rem", md: "2.5rem" },
+              textShadow: "0 0 30px rgba(102, 126, 234, 0.3)",
+            }}
+          >
+            Technical Skills
+          </Typography>
+
+          {/* <Typography
+            variant="h6"
+            sx={{
+              color: "text.secondary",
+              mb: 3,
+              fontSize: "1rem",
+              fontWeight: 300,
+            }}
+          >
+            Technologies I work with
+          </Typography> */}
+        </Box>
+        <Box sx={{ mb: 5 }}>
+          <Grid container spacing={2}>
+            {categorizedSkills.map((group, idx) => (
+              <Grid size={{ xs: 12, md: 6 }} key={idx}>
+                <Card
+                  sx={{
+                    height: "100%",
+                    background:
+                      "linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)",
+                    border: "1px solid rgba(255,255,255,0.1)",
+                    borderRadius: 2,
+                    backdropFilter: "blur(10px)",
+                  }}
+                >
+                  <CardContent sx={{ p: 3 }}>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        fontWeight: 700,
+                        mb: 2,
+                        background:
+                          "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                        backgroundClip: "text",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                      }}
+                    >
+                      {group.category}
+                    </Typography>
+
+                    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                      {group.items.map((item, i) => (
+                        <Chip
+                          key={`${item.name}-${i}`}
+                          icon={item.icon}
+                          label={item.name}
+                          size={isMobile ? "small" : "medium"}
+                          variant="outlined"
+                          sx={{
+                            px: 1.25,
+                            borderRadius: 2,
+                            borderColor: "rgba(255,255,255,0.22)",
+                            background: `linear-gradient(145deg, ${item.color}14 0%, rgba(255,255,255,0.03) 100%)`,
+                            color: "text.primary",
+                            transition: "all 0.25s ease",
+                            "& .MuiChip-icon": { color: item.color },
+                            "&:hover": {
+                              transform: "translateY(-1px)",
+                              boxShadow: "0 6px 16px rgba(0,0,0,0.25)",
+                              borderColor: "rgba(255,255,255,0.22)",
+                              background: `linear-gradient(145deg, ${item.color}22 0%, rgba(255,255,255,0.05) 100%)`,
+                            },
+                          }}
+                        />
+                      ))}
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      </Container>
+    </Box>
+  );
+};
+
+export default Skills;
