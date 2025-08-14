@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jahnavi-portfolio/static/css/main.01ad2569.css",
+    "main.js": "/jahnavi-portfolio/static/js/main.3d081709.js",
+    "index.html": "/jahnavi-portfolio/index.html",
+    "main.01ad2569.css.map": "/jahnavi-portfolio/static/css/main.01ad2569.css.map",
+    "main.3d081709.js.map": "/jahnavi-portfolio/static/js/main.3d081709.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01ad2569.css",
+    "static/js/main.3d081709.js"
+  ]
+}
