@@ -167,7 +167,7 @@ const Hero = () => {
                 <Button
                   variant="contained"
                   color="secondary"
-                  href="/resume.pdf"
+                  href="/Resume.pdf"
                   download
                   size="large"
                   sx={{
