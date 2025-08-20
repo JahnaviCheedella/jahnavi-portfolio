@@ -23,6 +23,19 @@ import {
   TableChart as PandasIcon,
   AutoAwesome as PyTorchIcon,
 } from "@mui/icons-material";
+import react from "../assets/React.png";
+import ts from "../assets/ts.png";
+import js from "../assets/js.png";
+import redux from "../assets/redux.png";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import python from "../assets/python.png";
+import pandas from "../assets/pandas.png";
+import numpy from "../assets/numpy.png";
+import pytorch from "../assets/pytorch.png";
+import nlp from "../assets/nlp.png";
+import genai from "../assets/genai.png";
+import langchain from "../assets/langchain.png";
 
 const Skills = () => {
   const theme = useTheme();
@@ -32,29 +45,27 @@ const Skills = () => {
     {
       category: "Core Frontend",
       items: [
-        { name: "React.js", color: "#61DAFB", icon: <ReactIcon /> },
-        { name: "TypeScript", color: "#3178C6", icon: <TypeScriptIcon /> },
-        { name: "JavaScript", color: "#F7DF1E", icon: <JavascriptIcon /> },
-        { name: "Redux", color: "#764ABC", icon: <ReduxIcon /> },
-        { name: "HTML5", color: "#E34F26", icon: <HtmlIcon /> },
-        { name: "CSS3", color: "#1572B6", icon: <CssIcon /> },
+        { name: "React JS", icon: react },
+        { name: "TypeScript", icon: ts },
+        { name: "Redux", icon: redux },
+        { name: "JavaScript", icon: js },
+        { name: "HTML5", icon: html },
+        { name: "CSS3", icon: css },
       ],
     },
     {
       category: "AI / ML",
       items: [
-        { name: "GenAI", color: "#3776AB", icon: <GenAIIcon /> },
-        { name: "Python", color: "#00DC82", icon: <LangChainIcon /> },
-        { name: "Pandas", color: "#3776AB", icon: <PandasIcon /> },
-        { name: "NumPy", color: "#3776AB", icon: <NumPyIcon /> },
-        { name: "NLP", color: "#00DC82", icon: <LangChainIcon /> },
-        { name: "PyTorch", color: "#EE4C2C", icon: <PyTorchIcon /> },
-        { name: "LangChain", color: "#00DC82", icon: <LangChainIcon /> },
+        { name: "GenAI", icon: genai },
+        { name: "PyTorch", icon: pytorch },
+        { name: "Python", icon: python },
+        { name: "Pandas", icon: pandas },
+        { name: "NumPy", icon: numpy },
+        { name: "NLP", icon: nlp },
+        { name: "LangChain", icon: langchain },
       ],
     },
   ];
-
-  // Single clean view: categorized chips
 
   return (
     <Box
@@ -143,7 +154,13 @@ const Skills = () => {
                       {group.items.map((item, i) => (
                         <Chip
                           key={`${item.name}-${i}`}
-                          icon={item.icon}
+                          icon={
+                            <img
+                              src={item.icon}
+                              alt={item.name}
+                              style={{ width: 20, height: 20 }}
+                            />
+                          }
                           label={item.name}
                           size={isMobile ? "small" : "medium"}
                           variant="outlined"
@@ -151,7 +168,6 @@ const Skills = () => {
                             px: 1.25,
                             borderRadius: 2,
                             borderColor: "rgba(255,255,255,0.22)",
-                            background: `linear-gradient(145deg, ${item.color}14 0%, rgba(255,255,255,0.03) 100%)`,
                             color: "text.primary",
                             transition: "all 0.25s ease",
                             "& .MuiChip-icon": { color: item.color },
