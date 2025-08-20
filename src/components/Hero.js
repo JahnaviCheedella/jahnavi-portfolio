@@ -98,9 +98,8 @@ const Hero = () => {
               >
                 I specialize in building responsive, accessible, and engaging
                 web interfaces using React JS, TypeScript, JavaScript, HTML5,
-                CSS3, and Redux. With a strong eye for design and performance, I
-                create seamless user experiences that work flawlessly across
-                devices.
+                CSS3, and Redux, creating seamless user experiences with a
+                strong focus on design and performance across devices.
               </Typography>
               <Typography
                 variant="body1"
@@ -111,11 +110,11 @@ const Hero = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                I'm equally passionate about the future of intelligent
-                applications — I work with Generative AI, leveraging tools like
-                LangChain, PyTorch, Pandas, and NumPy to build AI-powered
-                solutions that enhance user interaction and automate complex
-                tasks.
+                I’m passionate about intelligent applications, with expertise in
+                Generative AI, Prompt and Context Engineering, and developing models from
+                scratch using PyTorch, while also leveraging LangChain, PyTorch,
+                Pandas, and NumPy to build innovative AI-driven features that
+                enhance user interaction and automate complex tasks.
               </Typography>
               <Typography
                 variant="body1"

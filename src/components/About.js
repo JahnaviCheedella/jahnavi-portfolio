@@ -26,25 +26,25 @@ const About = () => {
       icon: <CodeIcon />,
       title: "Frontend Development",
       description:
-        "Specialized in creating responsive and interactive user interfaces using React JS, TypeScript, and Redux.",
+        "Specialized in creating responsive and interactive user interfaces using React JS, TypeScript, and Redux",
     },
     {
       icon: <LaptopIcon />,
       title: "UI/UX Design",
       description:
-        "Passionate about creating intuitive and visually appealing user experiences that enhance user engagement.",
+        "Passionate about creating intuitive and visually appealing user experiences that enhance user engagement",
     },
     {
       icon: <RocketIcon />,
-      title: "Generative AI",
+      title: "Generative AI & Prompt Engineering",
       description:
-        "Building intelligent solutions using Generative AI technologies like LangChain to create context-aware and agentic applications.",
+        "Developing intelligent, context-aware solutions with LangChain and Prompt Engineering",
     },
     {
       icon: <PeopleIcon />,
       title: "AI/ML Tools & Frameworks",
       description:
-        "Passionate about integrating AI into modern applications, with a foundation in PyTorch, Pandas, and NumPy to support intelligent, data-driven solutions.",
+        "Passionate about integrating AI into modern applications, with a foundation in PyTorch, Pandas, and NumPy to support intelligent, data-driven solutions",
     },
   ];
 
@@ -107,9 +107,9 @@ const About = () => {
                 }}
               >
                 I’m Jahnavi Cheedella — a Frontend Developer and Generative AI
-                enthusiast with a foundation in HTML5, CSS3, JavaScript,
-                and a passion for building responsive, dynamic interfaces using
-                React JS, TypeScript, and Redux. I specialize in crafting clean,
+                enthusiast with a foundation in HTML5, CSS3, JavaScript, and a
+                passion for building responsive, dynamic interfaces using React
+                JS, TypeScript, and Redux. I specialize in crafting clean,
                 scalable UIs that deliver seamless user experiences across
                 devices.
               </Typography>
@@ -137,11 +137,12 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                In parallel, I explore the world of Generative AI, building
-                intelligent features with tools like LangChain, PyTorch, Pandas,
-                and NumPy. I’m passionate about merging UI development with
-                smart technologies to create solutions that are both functional
-                and forward-thinking.
+                In parallel, my learning and work in Generative AI and Prompt
+                and Context Engineering involve developing intelligent features
+                with tools like LangChain, PyTorch, Pandas, and NumPy, while
+                building models from scratch using PyTorch. I’m passionate about
+                merging UI development with smart technologies to create
+                innovative, forward-thinking solutions.
               </Typography>
             </Box>
           </Grid>

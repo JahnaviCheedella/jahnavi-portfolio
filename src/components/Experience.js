@@ -28,7 +28,7 @@ const Experience = () => {
       duration: "October 10th, 2024 - Present",
       location: "On-site",
       description:
-        "Working on building responsive, accessible, and high-performance web applications using React, TypeScript, and Redux, while also exploring Generative AI technologies in separate projects to develop intelligent, automated solutions. -- I develop responsive, user-friendly web applications using React, TypeScript, and Redux, focusing on clean architecture, performance optimization, and accessibility. Alongside my core frontend role, I work on separate projects exploring Generative AI, NLP, and LangChain to design intelligent automation workflows and context-aware content generation solutions.",
+        "Working on building responsive, accessible, and high-performance web applications using React, TypeScript, and Redux, while also exploring Generative AI technologies and Prompt & Context Engineering in projects to develop intelligent, automated solutions.",
       achievements: [
         "Developed and maintained multiple responsive React applications with clean, scalable architectures",
         "Implemented Redux for efficient and predictable state management",
@@ -36,7 +36,8 @@ const Experience = () => {
         "Collaborated in agile teams to deliver user-friendly and performance-optimized solutions",
         "Enhanced UI/UX by applying modern design patterns and accessibility best practices",
         "Independently worked on projects using LangChain, NLP, and Generative AI to build intelligent features and automation workflows",
-        "Gained hands-on experience with AI tools and techniques, including text processing and context-aware content generation",
+        "Gaining experience with AI tools and techniques, including text processing and context-aware content generation",
+        "Applied Prompt & Context Engineering to optimize AI interactions and enhance model understanding in automation projects",
       ],
     },
     {
@@ -54,7 +55,7 @@ const Experience = () => {
         "Integrated third-party libraries and APIs to enhance application functionality",
         "Improved application performance by identifying and fixing UI bottlenecks",
       ],
-    },    
+    },
     {
       company: "BVM CS IT Services",
       position: "HTML & CSS Intern",

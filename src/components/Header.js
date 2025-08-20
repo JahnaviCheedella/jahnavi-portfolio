@@ -105,7 +105,7 @@ const Header = () => {
               }}
               onClick={() => scrollToSection('home')}
             >
-              Jahnavi Cheedella | React & AI Developer
+              Jahnavi Cheedella | React & Generative AI Developer
             </Typography>
 
             {!isMobile && (
