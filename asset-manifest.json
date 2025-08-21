@@ -1,13 +1,24 @@
 {
   "files": {
     "main.css": "/jahnavi-portfolio/static/css/main.01ad2569.css",
-    "main.js": "/jahnavi-portfolio/static/js/main.021a504d.js",
+    "main.js": "/jahnavi-portfolio/static/js/main.40d9b81b.js",
+    "static/media/html.png": "/jahnavi-portfolio/static/media/html.48f3413f9a14b157b922.png",
+    "static/media/python.png": "/jahnavi-portfolio/static/media/python.e742e694ded6c53c2a78.png",
+    "static/media/numpy.png": "/jahnavi-portfolio/static/media/numpy.fdbb46699eb0b0166319.png",
+    "static/media/genai.png": "/jahnavi-portfolio/static/media/genai.8d84778946bc0b0f433f.png",
+    "static/media/nlp.png": "/jahnavi-portfolio/static/media/nlp.27f67937abed46e4afaf.png",
+    "static/media/redux.png": "/jahnavi-portfolio/static/media/redux.21e3bf57d376d48838ea.png",
+    "static/media/css.png": "/jahnavi-portfolio/static/media/css.140ad62eff44aa460ae5.png",
+    "static/media/pytorch.png": "/jahnavi-portfolio/static/media/pytorch.55aeff83c7f1b9deaddc.png",
+    "static/media/js.png": "/jahnavi-portfolio/static/media/js.fb30a1e0520baa3b1d25.png",
+    "static/media/ts.png": "/jahnavi-portfolio/static/media/ts.87a441b9fd1a33fe6197.png",
+    "static/media/React.png": "/jahnavi-portfolio/static/media/React.98ff38735baa4c1b0381.png",
     "index.html": "/jahnavi-portfolio/index.html",
     "main.01ad2569.css.map": "/jahnavi-portfolio/static/css/main.01ad2569.css.map",
-    "main.021a504d.js.map": "/jahnavi-portfolio/static/js/main.021a504d.js.map"
+    "main.40d9b81b.js.map": "/jahnavi-portfolio/static/js/main.40d9b81b.js.map"
   },
   "entrypoints": [
     "static/css/main.01ad2569.css",
-    "static/js/main.021a504d.js"
+    "static/js/main.40d9b81b.js"
   ]
 }
