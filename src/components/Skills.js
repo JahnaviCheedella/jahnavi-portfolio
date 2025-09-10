@@ -10,19 +10,6 @@ import {
   useMediaQuery,
   Chip,
 } from "@mui/material";
-import {
-  Html as HtmlIcon,
-  Css as CssIcon,
-  Javascript as JavascriptIcon,
-  ViewInAr as ReactIcon,
-  DataObject as TypeScriptIcon,
-  Storage as ReduxIcon,
-  Psychology as GenAIIcon,
-  AccountTree as LangChainIcon,
-  Functions as NumPyIcon,
-  TableChart as PandasIcon,
-  AutoAwesome as PyTorchIcon,
-} from "@mui/icons-material";
 import react from "../assets/React.png";
 import ts from "../assets/ts.png";
 import js from "../assets/js.png";
@@ -36,6 +23,8 @@ import pytorch from "../assets/pytorch.png";
 import nlp from "../assets/nlp.png";
 import genai from "../assets/genai.png";
 import langchain from "../assets/langchain.png";
+import rag from "../assets/rag.png";
+import api from "../assets/api.png";
 
 const Skills = () => {
   const theme = useTheme();
@@ -48,6 +37,7 @@ const Skills = () => {
         { name: "React JS", icon: react },
         { name: "TypeScript", icon: ts },
         { name: "Redux", icon: redux },
+        { name: "REST APIs", icon: api },
         { name: "JavaScript", icon: js },
         { name: "HTML5", icon: html },
         { name: "CSS3", icon: css },
@@ -63,6 +53,7 @@ const Skills = () => {
         { name: "NumPy", icon: numpy },
         { name: "NLP", icon: nlp },
         { name: "LangChain", icon: langchain },
+        { name: "RAG", icon: rag },
       ],
     },
   ];

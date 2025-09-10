@@ -41,7 +41,30 @@ const Projects = () => {
         "Designed and developed responsive layouts to ensure cross-device compatibility on desktops, tablets, and mobile phones.",
       ],
     },
-
+    {
+      title: "RAG Q&A Chatbot",
+      description:
+        "Built a Retrieval-Augmented Generation (RAG) chatbot that answers questions from external knowledge sources (e.g., Wikipedia, URLs, PDFs, databases). Integrated prompt engineering and external knowledge retrieval to ensure accurate and up-to-date answers.",
+      technologies: [
+        "React JS",
+        "Python",
+        "Flask",
+        "LangChain",
+        "FAISS",
+        "HuggingFace",
+      ],
+      icon: <CodeIcon />,
+      category: "Fullstack",
+      features: [
+        "Developed a responsive frontend using React JS, optimized for both desktop and mobile devices.",
+        "Implemented backend with Flask to handle LLM queries and serve results via APIs.",
+        "Used LangChain to orchestrate document loading, splitting, and retrieval pipelines.",
+        "Integrated FAISS vector database for semantic search and document retrieval.",
+        "Applied HuggingFace models (Flan-T5 + Sentence Transformers) for Q&A and embeddings.",
+        "Designed with prompt engineering techniques to ensure controlled and reliable outputs.",
+        "Showcased example on Wikipedia data, but can be extended to latest sources like URLs, PDFs, and databases.",
+      ],
+    },
     {
       title: "Clustering",
       description:
