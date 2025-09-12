@@ -76,7 +76,7 @@ const Hero = () => {
               </Typography>
 
               <Typography
-                variant="h4"
+                variant="h5"
                 component="h2"
                 sx={{
                   fontWeight: 600,
@@ -84,7 +84,7 @@ const Hero = () => {
                   mb: 3,
                 }}
               >
-                React & Generative AI Developer
+                React JS & Generative AI Developer
               </Typography>
 
               <Typography
