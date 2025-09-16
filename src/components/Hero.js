@@ -97,7 +97,7 @@ const Hero = () => {
                 }}
               >
                 I specialize in building responsive, accessible, and engaging
-                web interfaces using React JS, TypeScript, JavaScript, HTML5,
+                web interfaces using React.js, Next.js, TypeScript, JavaScript, HTML5,
                 CSS3, and Redux, creating seamless user experiences with a
                 strong focus on design and performance across devices.
               </Typography>
@@ -179,7 +179,7 @@ const Hero = () => {
                     },
                   }}
                 >
-                  Download my resume
+                  Get my CV
                 </Button>
               </Box>
             </Box>

@@ -108,10 +108,10 @@ const About = () => {
               >
                 I’m Jahnavi Cheedella — a Frontend Developer and Generative AI
                 enthusiast with a foundation in HTML5, CSS3, JavaScript, and a
-                passion for building responsive, dynamic interfaces using React
-                JS, TypeScript, and Redux. I specialize in crafting clean,
-                scalable UIs that deliver seamless user experiences across
-                devices.
+                passion for building responsive, dynamic interfaces using
+                React.js, Next.js, TypeScript, and Redux. I specialize in
+                crafting clean, scalable UIs that deliver seamless user
+                experiences across devices.
               </Typography>
               <Typography
                 variant="body1"

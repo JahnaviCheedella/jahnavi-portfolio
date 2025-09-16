@@ -25,6 +25,7 @@ import genai from "../assets/genai.png";
 import langchain from "../assets/langchain.png";
 import rag from "../assets/rag.png";
 import api from "../assets/api.png";
+import next from "../assets/next.png";
 
 const Skills = () => {
   const theme = useTheme();
@@ -34,7 +35,8 @@ const Skills = () => {
     {
       category: "Core Frontend",
       items: [
-        { name: "React JS", icon: react },
+        { name: "React.js", icon: react },
+        { name: "Next.js", icon: next },
         { name: "TypeScript", icon: ts },
         { name: "Redux", icon: redux },
         { name: "REST APIs", icon: api },
