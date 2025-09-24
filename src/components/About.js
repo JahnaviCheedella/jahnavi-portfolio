@@ -30,15 +30,15 @@ const About = () => {
     },
     {
       icon: <LaptopIcon />,
-      title: "UI/UX Design",
+      title: "Web Services & Integration",
       description:
-        "Passionate about creating intuitive and visually appealing user experiences that enhance user engagement",
+        "Experience in connecting frontend applications with backend services through REST APIs and database interactions for seamless functionality.",
     },
     {
       icon: <RocketIcon />,
       title: "Generative AI & Prompt Engineering",
       description:
-        "Developing intelligent, context-aware solutions with LangChain and Prompt Engineering",
+        "Developing intelligent, context-aware solutions with LangChain and Prompt Engineering. Exploring practical applications of AI to enhance user experiences and workflows.",
     },
     {
       icon: <PeopleIcon />,
@@ -106,12 +106,13 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                I’m Jahnavi Cheedella — a Frontend Developer and Generative AI
-                enthusiast with a foundation in HTML5, CSS3, JavaScript, and a
-                passion for building responsive, dynamic interfaces using
-                React.js, Next.js, TypeScript, and Redux. I specialize in
-                crafting clean, scalable UIs that deliver seamless user
-                experiences across devices.
+                I’m Jahnavi Cheedella — a Frontend React Developer and
+                Generative AI enthusiast with a strong foundation in HTML5,
+                CSS3, and JavaScript (ES6+). I specialize in creating
+                responsive, dynamic, and user-friendly interfaces using
+                React.js, Next.js, TypeScript, and Redux (RTK). My focus is on
+                building clean, scalable, and high-performance web applications
+                that deliver seamless cross-device experiences.
               </Typography>
               <Typography
                 variant="body1"
@@ -122,12 +123,12 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                Currently, I work at TrueID, where I’ve contributed to
-                real-world projects focused on UI development, state management,
-                and performance optimization. My role has strengthened my
-                ability to collaborate in agile teams, follow modern React
-                patterns, and deliver maintainable, user-friendly web
-                applications.
+                In addition to frontend development, I explore Generative AI to
+                design intelligent, data-driven solutions. My expertise includes
+                Python, PyTorch, NLP, RAG (Retrieval-Augmented Generation),
+                LangChain, and Prompt Engineering, supported by skills in Pandas
+                and NumPy. I’m passionate about combining UI development with
+                AI-driven features to bring innovative ideas to life.
               </Typography>
               <Typography
                 variant="body1"
@@ -137,12 +138,10 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                In parallel, my learning and work in Generative AI and Prompt
-                and Context Engineering involve developing intelligent features
-                with tools like LangChain, PyTorch, Pandas, and NumPy, while
-                building models from scratch using PyTorch. I’m passionate about
-                merging UI development with smart technologies to create
-                innovative, forward-thinking solutions.
+                I also have exposure to the MERN stack, having built an
+                application that strengthened my understanding of full-stack
+                workflows and improved my ability to work across both frontend
+                and backend components.
               </Typography>
             </Box>
           </Grid>

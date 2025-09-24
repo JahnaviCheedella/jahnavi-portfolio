@@ -28,16 +28,16 @@ const Experience = () => {
       duration: "October 10th, 2024 - Present",
       location: "On-site",
       description:
-        "Working on building responsive, accessible, and high-performance web applications using React, TypeScript, and Redux, while also exploring Generative AI technologies and Prompt & Context Engineering in projects to develop intelligent, automated solutions.",
+        "Building responsive, accessible, and high-performance web applications using React, TypeScript, and Redux (RTK), while exploring Generative AI technologies and Prompt & Context Engineering to create intelligent, automated features.",
       achievements: [
         "Developed and maintained multiple responsive React applications with clean, scalable architectures",
-        "Implemented Redux for efficient and predictable state management",
+        "Implemented Redux (RTK) for efficient and predictable state management",
         "Used TypeScript to ensure type-safe and maintainable code",
-        "Collaborated in agile teams to deliver user-friendly and performance-optimized solutions",
-        "Enhanced UI/UX by applying modern design patterns and accessibility best practices",
-        "Independently worked on projects using LangChain, NLP, and Generative AI to build intelligent features and automation workflows",
-        "Gaining experience with AI tools and techniques, including text processing and context-aware content generation",
-        "Applied Prompt & Context Engineering to optimize AI interactions and enhance model understanding in automation projects",
+        "Collaborated in agile teams to deliver user-friendly, performance-optimized solutions",
+        "Enhanced UI by applying modern design patterns and accessibility best practices",
+        "Built AI-driven features using LangChain, NLP, and Generative AI for intelligent automation",
+        "Applied Prompt & Context Engineering to optimize AI interactions and generate context-aware outputs",
+        "Integrated AI solutions seamlessly with frontend applications to enhance user experiences",
       ],
     },
     {

@@ -84,7 +84,7 @@ const Hero = () => {
                   mb: 3,
                 }}
               >
-                React JS & Generative AI Developer
+                React & Generative AI Developer
               </Typography>
 
               <Typography
@@ -96,10 +96,14 @@ const Hero = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                I specialize in building responsive, accessible, and engaging
-                web interfaces using React.js, Next.js, TypeScript, JavaScript, HTML5,
-                CSS3, and Redux, creating seamless user experiences with a
-                strong focus on design and performance across devices.
+                As a Frontend React Developer and Generative AI enthusiast, I
+                bring hands-on experience in building responsive,
+                high-performance applications. I am skilled in creating engaging
+                and consistent user interfaces optimized for cross-device
+                performance using technologies such as React.js, Next.js, Redux
+                (RTK), TypeScript, JavaScript (ES6+), HTML5, CSS3, and REST
+                APIs. My expertise extends to the full MERN stack, including
+                Node.js, Express.js, and MongoDB
               </Typography>
               <Typography
                 variant="body1"
@@ -110,11 +114,12 @@ const Hero = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                I’m passionate about intelligent applications, with expertise in
-                Generative AI, Prompt and Context Engineering, and developing models from
-                scratch using PyTorch, while also leveraging LangChain, PyTorch,
-                Pandas, and NumPy to build innovative AI-driven features that
-                enhance user interaction and automate complex tasks.
+                With a passion for intelligent automation, I leverage my skills
+                as a Generative AI enthusiast to deliver innovative solutions.
+                My expertise includes Python, PyTorch, NLP, RAG
+                (Retrieval-Augmented Generation), LangChain, and Prompt
+                Engineering, supported by foundation in Pandas and NumPy to
+                build data-driven AI features
               </Typography>
               <Typography
                 variant="body1"

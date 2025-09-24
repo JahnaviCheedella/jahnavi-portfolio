@@ -12,13 +12,7 @@ import {
   useTheme,
   useMediaQuery,
 } from "@mui/material";
-import {
-  Code as CodeIcon,
-  Language as LanguageIcon,
-  OpenInNew as OpenInNewIcon,
-  Security as SecurityIcon,
-  Psychology as PsychologyIcon,
-} from "@mui/icons-material";
+import { Code as CodeIcon } from "@mui/icons-material";
 
 const Projects = () => {
   const theme = useTheme();
@@ -28,23 +22,21 @@ const Projects = () => {
     {
       title: "IDM Demos",
       description:
-        "Contributed to the development of UI for IDM demos application, focusing on building user-friendly and visually appealing interfaces. Collaborated with product and design teams to deliver intuitive flows and seamless user experiences. Integrated real-time functionalities to showcase capabilities of identity verification using auto document capture and auto face capture.",
+        "Built responsive UI for IDM demo applications with real-time document and face capture using Innovatrics, delivering intuitive and seamless user experiences.",
       technologies: ["React JS"],
       icon: <CodeIcon />,
       category: "Frontend",
       features: [
-        "Developed a modern UI design system to ensure visual consistency and improve usability across demo applications.",
-        "Integrated automatic document capture functionality using Innovatrics.",
-        "Integrated automatic face capture using Innovatrics.",
-        "Built interactive components such as stepper, capture previews, and progress indicators to guide users.",
-        "Added user engagement features like success dialog for better UX.",
-        "Designed and developed responsive layouts to ensure cross-device compatibility on desktops, tablets, and mobile phones.",
+        "Created a consistent design system for demo applications",
+        "Integrated automatic document and face capture using Innovatrics",
+        "Developed interactive stepper, previews, and progress indicators",
+        "Built responsive layouts for desktop, tablet, and mobile devices",
       ],
     },
     {
       title: "RAG Q&A Chatbot",
       description:
-        "Built a Retrieval-Augmented Generation (RAG) chatbot that answers questions from external knowledge sources (e.g., Wikipedia, URLs, PDFs, databases). Integrated prompt engineering and external knowledge retrieval to ensure accurate and up-to-date answers.",
+        "Developed a RAG chatbot that answers questions from external sources using React, Flask, LangChain, FAISS, and HuggingFace models.",
       technologies: [
         "React JS",
         "Python",
@@ -56,118 +48,114 @@ const Projects = () => {
       icon: <CodeIcon />,
       category: "Fullstack",
       features: [
-        "Developed a responsive frontend using React JS, optimized for both desktop and mobile devices.",
-        "Implemented backend with Flask to handle LLM queries and serve results via APIs.",
-        "Used LangChain to orchestrate document loading, splitting, and retrieval pipelines.",
-        "Integrated FAISS vector database for semantic search and document retrieval.",
-        "Applied HuggingFace models (Flan-T5 + Sentence Transformers) for Q&A and embeddings.",
-        "Designed with prompt engineering techniques to ensure controlled and reliable outputs.",
-        "Showcased example on Wikipedia data, but can be extended to latest sources like URLs, PDFs, and databases.",
+        "Built responsive frontend and Flask backend to handle queries",
+        "Integrated LangChain and FAISS for document retrieval and semantic search",
+        "Applied prompt engineering for controlled and accurate outputs",
+        "Showcased dynamic Q&A from Wikipedia and other external sources",
       ],
     },
     {
       title: "Clustering",
       description:
-        "Developed dynamic and interactive UI components using React and Redux, enabling seamless state management across the application. Focused on building reusable components and structured state logic to ensure scalability. Enhanced the user experience by implementing smooth loading transitions using skeletons.",
+        "Created dynamic React components with Redux for state management and smooth user experience enhancements.",
       technologies: ["React JS", "Redux"],
       icon: <CodeIcon />,
       category: "Frontend",
       features: [
-        "Implemented Redux for effective state management and predictable data flow across components.",
-        "Developed modular UI components to promote reusability and maintainable design architecture.",
-        "Integrated Material UI Skeleton loader to improve user experience during data fetch and render delays.",
-        "Built interactive UI elements like expandable lists and filters to enhance usability and engagement.",
+        "Implemented Redux for predictable state management",
+        "Built modular, reusable UI components",
+        "Added skeleton loaders and interactive lists for better UX",
       ],
     },
-
     {
       title: "Acquiring",
       description:
-        "Engineered robust UI components using React and TypeScript to improve reliability and maintainability of the frontend. Emphasized type safety and clear interfaces to prevent runtime errors and improve developer productivity. Leveraged Redux for structured global state handling.",
+        "Engineered robust UI components using React and TypeScript, ensuring type safety, maintainability, and structured state management.",
       technologies: ["React", "TypeScript", "Redux"],
       icon: <CodeIcon />,
       category: "Frontend",
       features: [
-        "Built modular and maintainable UI components aligned with project standards and design system.",
-        "Applied TypeScript to ensure strong typing and avoid runtime issues through compile-time checks.",
-        "Wrote type-safe and scalable code with clear interface definitions and consistent prop typing.",
-        "Utilized modern React practices such as hooks, functional components, and context-driven state management.",
+        "Developed modular, type-safe components with clear interfaces",
+        "Applied TypeScript to prevent runtime errors",
+        "Used modern React patterns like hooks and functional components",
       ],
     },
     {
       title: "KYC Update Portal",
       description:
-        "Led UI enhancements and integrated new functionalities for the KYC update portal using React JS and Redux. Integrated auto document capture and auto face capture using Innovatrics. Improved performance and user satisfaction through optimized components and responsive layouts.",
+        "Enhanced UI and integrated auto document/face capture for faster, seamless KYC processing using React and Redux.",
       technologies: ["React JS", "Redux"],
       icon: <CodeIcon />,
       category: "Frontend",
       features: [
-        "Built modular UI components to streamline KYC processes and improve user navigation.",
-        "Integrated Innovatrics for automatic document capture to eliminate manual uploads and speed up verification.",
-        "Implemented automatic face detection and capture using Innovatrics SDK for secure and fast onboarding.",
-        "Enhanced user experience with clean design, intuitive flow, and feedback mechanisms.",
-        "Optimized React components for better performance and reduced re-renders.",
-        "Designed responsive layouts ensuring consistent behavior across desktops, tablets, and mobile devices.",
+        "Built modular components to streamline KYC workflow",
+        "Integrated Innovatrics for automatic document and face capture",
+        "Optimized components and responsive layouts for better performance",
       ],
     },
     {
       title: "TrueID Image Verification Portal",
       description:
-        "Developed a web-based tool that enables users to upload images for real-time verification against AI-generated / face morphed content. Leveraged React JS for front-end development and integrated APIs for backend image analysis. Focused on intuitive UI and cross-device compatibility.",
+        "Developed a web tool for real-time verification of uploaded images against AI-generated or morphed content using React.",
       technologies: ["React JS"],
       icon: <CodeIcon />,
       category: "Frontend",
       features: [
-        "Created a user-friendly image upload interface with drag-and-drop and preview capabilities.",
-        "Integrated real-time REST APIs to analyze uploaded images and return verification results.",
-        "Displayed clear feedback labels such as 'AI-Generated' or 'Real Image' based on analysis response.",
-        "Built responsive design to support seamless usage across devices and screen sizes.",
+        "Created drag-and-drop image upload with previews",
+        "Integrated APIs for real-time image verification",
+        "Built responsive interface for consistent experience across devices",
       ],
     },
     {
-      title:
-        "Custom Object Training and Segmentation for Drone Imagery Using YOLO Model",
+      title: "Custom Object Training & Segmentation for Drone Imagery",
       description:
-        "Trained a customized YOLOv11x model for object segmentation on drone imagery, targeting features such as multi-storey buildings, road width, curvature, trees, pedestrians, dividers, footpaths, parked vehicles, guardrails, and solid/dashed lines. Leveraged segmentation masks annotated in Label Studio and executed model training and prediction on GPU servers.",
+        "Trained YOLOv11x model for segmentation of buildings, roads, trees, vehicles, and other features in drone imagery using labeled datasets.",
       technologies: ["Label Studio", "E2ENetworks TIR", "Python", "YOLO"],
       icon: <CodeIcon />,
       category: "AI/ML",
       features: [
-        "Used advanced annotation with segmentation masks for precise object labeling via Label Studio",
-        "Exported and prepared masked datasets for training YOLOv11x on custom drone imagery",
-        "Utilized pretrained YOLOv11x model, fine-tuned on E2ENetworks GPU instances for high-performance computation",
-        "Focused segmentation on diverse, domain-specific categories relevant to road and urban analysis",
-        "Deployed trained model for accurate real-time segmentation and detection in aerial drone images",
+        "Annotated datasets with segmentation masks via Label Studio",
+        "Fine-tuned YOLOv11x for accurate object detection",
+        "Deployed model for real-time aerial image segmentation",
       ],
     },
     {
-      title:
-        "Training and prediction of AI Deepfake Vs Real face image detection model",
+      title: "AI Deepfake vs Real Face Detection",
       description:
-        "Developed a customized model using a pre-trained Vision Transformer to detect and classify deepfakes, AI-generated images, face morphs, face swaps, and digitally injected faces. Implemented with PyTorch in Python, with training and inference executed on AWS GPU instances for efficient computation and accurate real-time detection",
+        "Developed a model using pre-trained Vision Transformer to detect deepfakes, morphs, swaps, and digitally injected faces.",
       technologies: ["Linux", "GitBash GUI", "Python"],
       icon: <CodeIcon />,
       category: "AI/ML",
       features: [
-        "Customized classification for detecting AI-generated vs. real images, including deepfakes, morphs, swaps, digitally injected faces, and duplicate image identification",
-        "Utilized pre-trained Vision Transformer architecture for enhanced detection accuracy and robust image analysis",
-        "Leveraged AWS GPU instances for server deployment, management, training, inference, and server-side image processing",
-        "Incorporated Linux command-line tools for efficient image analysis and processing workflows",
-        "Employed GitBash scripting for automation of tasks, streamlining development and deployment processes",
+        "Customized detection for AI-generated and real images",
+        "Leveraged Vision Transformer architecture for high accuracy",
+        "Used AWS GPU instances for training, inference, and deployment",
       ],
     },
     {
-      title: "Sentiment Analysis Classifier for IMDb Movie Reviews",
+      title: "Sentiment Analysis Classifier for IMDb Reviews",
       description:
-        "Developed and trained a Long Short-Term Memory (LSTM) neural network from scratch using PyTorch to classify movie reviews as positive or negative. Built a complete text preprocessing pipeline, including tokenization, vocabulary creation, and sequence padding, and implemented a trainable embedding layer for semantic representation learning. Achieved an accuracy of [Your Accuracy, e.g., 85%] on the test set, demonstrating proficiency in recurrent neural architectures and end-to-end model development.",
+        "Built an LSTM-based model in PyTorch for classifying movie reviews as positive or negative, with full preprocessing and embedding pipeline.",
       technologies: ["Python", "Pandas", "PyTorch", "NLP"],
       icon: <CodeIcon />,
       category: "AI/ML",
       features: [
-        "Implemented an LSTM-based architecture for binary sentiment classification of IMDb movie reviews",
-        "Designed a robust preprocessing pipeline with tokenization, vocabulary creation, and sequence padding",
-        "Developed a trainable embedding layer to learn and capture semantic relationships in text data",
-        "Trained, validated, and evaluated the model using PyTorch, achieving [Your Accuracy, e.g., 85%] accuracy on the test set",
+        "Implemented LSTM architecture for binary classification",
+        "Designed preprocessing pipeline with tokenization and embedding layer",
+        "Achieved [Your Accuracy]% on test data",
+      ],
+    },
+    {
+      title: "E-Commerce Web Application",
+      description:
+        "Developed a full-stack e-commerce app with React frontend, Node.js/Express backend, and MongoDB database for secure and responsive shopping experience.",
+      technologies: ["React.js", "Redux(RTK)", "Node.js", "Express", "MongoDB"],
+      icon: <CodeIcon />,
+      category: "Full Stack (MERN)",
+      features: [
+        "Built responsive UI with Redux-managed state for auth, products, and cart",
+        "Implemented secure signup/signin flows with password hashing",
+        "Developed backend APIs for product and cart management",
       ],
     },
   ];

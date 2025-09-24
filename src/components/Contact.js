@@ -48,13 +48,11 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      // Option 1: Using mailto (opens default email client)
       const mailtoLink = `mailto:cheedellajahnavi@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
       window.open(mailtoLink);
       
       setSubmitStatus('success');
       
-      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -79,7 +77,7 @@ const Contact = () => {
     {
       icon: <PhoneIcon />,
       title: "Phone",
-      value: "+91 7981064354",
+      value: "+91-7981064354",
       link: "tel:+917981064354",
     },
     {

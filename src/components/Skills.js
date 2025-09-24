@@ -26,6 +26,10 @@ import langchain from "../assets/langchain.png";
 import rag from "../assets/rag.png";
 import api from "../assets/api.png";
 import next from "../assets/next.png";
+import node from "../assets/nodejs.png";
+import express from "../assets/expressjs.png";
+import mongo from "../assets/mongodb.png";
+import promptEng from "../assets/promptEng.png";
 
 const Skills = () => {
   const theme = useTheme();
@@ -33,29 +37,38 @@ const Skills = () => {
 
   const categorizedSkills = [
     {
-      category: "Core Frontend",
+      category: "Frontend",
       items: [
-        { name: "React.js", icon: react },
-        { name: "Next.js", icon: next },
-        { name: "TypeScript", icon: ts },
-        { name: "Redux", icon: redux },
-        { name: "REST APIs", icon: api },
-        { name: "JavaScript", icon: js },
         { name: "HTML5", icon: html },
         { name: "CSS3", icon: css },
+        { name: "JavaScript", icon: js },
+        { name: "TypeScript", icon: ts },
+        { name: "React.js", icon: react },
+        { name: "Next.js", icon: next },
+        { name: "Redux(RTK)", icon: redux },
+        { name: "REST APIs", icon: api },
       ],
     },
     {
       category: "AI / ML",
       items: [
-        { name: "GenAI", icon: genai },
-        { name: "PyTorch", icon: pytorch },
         { name: "Python", icon: python },
-        { name: "Pandas", icon: pandas },
         { name: "NumPy", icon: numpy },
+        { name: "Pandas", icon: pandas },
+        { name: "PyTorch", icon: pytorch },
         { name: "NLP", icon: nlp },
-        { name: "LangChain", icon: langchain },
+        { name: "Gen AI", icon: genai },
         { name: "RAG", icon: rag },
+        { name: "LangChain", icon: langchain },
+        { name: "Prompt/Context Engineering", icon: promptEng },
+      ],
+    },
+    {
+      category: "Backend / Full Stack",
+      items: [
+        { name: "Node.js", icon: node },
+        { name: "Express.js", icon: express },
+        { name: "Mongo DB", icon: mongo },
       ],
     },
   ];
