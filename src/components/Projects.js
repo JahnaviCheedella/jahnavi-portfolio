@@ -20,17 +20,17 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "IDM Demos",
+      title: "TrueID Image Verification Portal",
       description:
-        "Built responsive UI for IDM demo applications with real-time document and face capture using Innovatrics, delivering intuitive and seamless user experiences.",
-      technologies: ["React JS"],
+        "Developed an interactive image verification portal with dynamic React.js UI, enabling drag-and-drop uploads, Firebase authentication, real-time verification via API integration and seamless backend data management using python and PostgreSQL.",
+      technologies: ["React.js", "Python", "PostgreSQL", "Firebase"],
       icon: <CodeIcon />,
-      category: "Frontend",
+      category: "Full Stack",
       features: [
-        "Created a consistent design system for demo applications",
-        "Integrated automatic document and face capture using Innovatrics",
-        "Developed interactive stepper, previews, and progress indicators",
-        "Built responsive layouts for desktop, tablet, and mobile devices",
+        "Implemented secure user authentication and authorization using Firebase.",
+        "Developed a dynamic and responsive UI with drag-and-drop image upload functionality.",
+        "Integrated real-time image verification through backend API connections.",
+        "Managed and stored verification data efficiently using PostgreSQL and Python backend.",
       ],
     },
     {
@@ -38,7 +38,7 @@ const Projects = () => {
       description:
         "Developed a RAG chatbot that answers questions from external sources using React, Flask, LangChain, FAISS, and HuggingFace models.",
       technologies: [
-        "React JS",
+        "React.js",
         "Python",
         "Flask",
         "LangChain",
@@ -55,36 +55,30 @@ const Projects = () => {
       ],
     },
     {
-      title: "Clustering",
+      title: "AI Image Generator",
       description:
-        "Created dynamic React components with Redux for state management and smooth user experience enhancements.",
-      technologies: ["React JS", "Redux"],
-      icon: <CodeIcon />,
-      category: "Frontend",
-      features: [
-        "Implemented Redux for predictable state management",
-        "Built modular, reusable UI components",
-        "Added skeleton loaders and interactive lists for better UX",
+        "Built a full-stack web application transforming text prompts into AI-generated images via Google Gemini API, ensuring a seamless user experience. ",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express",
+        "Google Gemini API",
+        "Prompt Engineering",
       ],
-    },
-    {
-      title: "Acquiring",
-      description:
-        "Engineered robust UI components using React and TypeScript, ensuring type safety, maintainability, and structured state management.",
-      technologies: ["React", "TypeScript", "Redux"],
       icon: <CodeIcon />,
-      category: "Frontend",
+      category: "Generative AI",
       features: [
-        "Developed modular, type-safe components with clear interfaces",
-        "Applied TypeScript to prevent runtime errors",
-        "Used modern React patterns like hooks and functional components",
+        "Transforms text prompts into AI-generated images using Google Gemini API.",
+        "Developed a full-stack architecture with React.js, Node.js, and Express.",
+        "Integrated optimized prompt engineering for accurate image generation.",
+        "Ensured a smooth and responsive user experience across devices.",
       ],
     },
     {
       title: "KYC Update Portal",
       description:
         "Enhanced UI and integrated auto document/face capture for faster, seamless KYC processing using React and Redux.",
-      technologies: ["React JS", "Redux"],
+      technologies: ["React.js", "Redux"],
       icon: <CodeIcon />,
       category: "Frontend",
       features: [
@@ -94,18 +88,19 @@ const Projects = () => {
       ],
     },
     {
-      title: "TrueID Image Verification Portal",
+      title: "E-Commerce Web Application",
       description:
-        "Developed a web tool for real-time verification of uploaded images against AI-generated or morphed content using React.",
-      technologies: ["React JS"],
+        "Developed a full-stack e-commerce app with React frontend, Node.js/Express backend, and MongoDB database for secure and responsive shopping experience.",
+      technologies: ["React.js", "Redux(RTK)", "Node.js", "Express", "MongoDB"],
       icon: <CodeIcon />,
-      category: "Frontend",
+      category: "Full Stack (MERN)",
       features: [
-        "Created drag-and-drop image upload with previews",
-        "Integrated APIs for real-time image verification",
-        "Built responsive interface for consistent experience across devices",
+        "Built responsive UI with Redux-managed state for auth, products, and cart",
+        "Implemented secure signup/signin flows with password hashing",
+        "Developed backend APIs for product and cart management",
       ],
     },
+
     {
       title: "Custom Object Training & Segmentation for Drone Imagery",
       description:
@@ -120,7 +115,7 @@ const Projects = () => {
       ],
     },
     {
-      title: "AI Deepfake vs Real Face Detection",
+      title: "Training and prediction AI Deepfake vs Real Face Detection Model",
       description:
         "Developed a model using pre-trained Vision Transformer to detect deepfakes, morphs, swaps, and digitally injected faces.",
       technologies: ["Linux", "GitBash GUI", "Python"],
@@ -133,29 +128,44 @@ const Projects = () => {
       ],
     },
     {
-      title: "Sentiment Analysis Classifier for IMDb Reviews",
+      title: "Identity Management Portal",
       description:
-        "Built an LSTM-based model in PyTorch for classifying movie reviews as positive or negative, with full preprocessing and embedding pipeline.",
-      technologies: ["Python", "Pandas", "PyTorch", "NLP"],
+        "Built responsive UI for IDM demo applications with real-time document and face capture using Innovatrics, delivering intuitive and seamless user experiences.",
+      technologies: ["React.js"],
       icon: <CodeIcon />,
-      category: "AI/ML",
+      category: "Frontend",
       features: [
-        "Implemented LSTM architecture for binary classification",
-        "Designed preprocessing pipeline with tokenization and embedding layer",
-        "Achieved [Your Accuracy]% on test data",
+        "Created a consistent design system for demo applications",
+        "Integrated automatic document and face capture using Innovatrics",
+        "Developed interactive stepper, previews, and progress indicators",
+        "Built responsive layouts for desktop, tablet, and mobile devices",
       ],
     },
     {
-      title: "E-Commerce Web Application",
+      title: "Acquiring Portal",
       description:
-        "Developed a full-stack e-commerce app with React frontend, Node.js/Express backend, and MongoDB database for secure and responsive shopping experience.",
-      technologies: ["React.js", "Redux(RTK)", "Node.js", "Express", "MongoDB"],
+        "Engineered robust UI components using React and TypeScript, ensuring type safety, maintainability, and structured state management.",
+      technologies: ["React", "TypeScript", "Redux"],
       icon: <CodeIcon />,
-      category: "Full Stack (MERN)",
+      category: "Frontend",
       features: [
-        "Built responsive UI with Redux-managed state for auth, products, and cart",
-        "Implemented secure signup/signin flows with password hashing",
-        "Developed backend APIs for product and cart management",
+        "Developed modular, type-safe components with clear interfaces",
+        "Applied TypeScript to prevent runtime errors",
+        "Used modern React patterns like hooks and functional components",
+      ],
+    },
+
+    {
+      title: "Clustering Portal",
+      description:
+        "Created dynamic React components with Redux for state management and smooth user experience enhancements.",
+      technologies: ["React.js", "Redux"],
+      icon: <CodeIcon />,
+      category: "Frontend",
+      features: [
+        "Implemented Redux for predictable state management",
+        "Built modular, reusable UI components",
+        "Added skeleton loaders and interactive lists for better UX",
       ],
     },
   ];
