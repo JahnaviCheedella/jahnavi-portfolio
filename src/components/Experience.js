@@ -25,7 +25,7 @@ const Experience = () => {
     {
       company: "TrueID",
       position: "React & Generative AI Developer",
-      duration: "October 10th, 2024 - Present",
+      duration: "October 2024 - Present",
       location: "On-site",
       description:
         "Building responsive, accessible, and high-performance web applications using React, TypeScript, and Redux (RTK), while exploring Generative AI technologies and Prompt & Context Engineering to create intelligent, automated features.",
@@ -43,7 +43,7 @@ const Experience = () => {
     {
       company: "TrueID",
       position: "React JS Intern",
-      duration: "July 10th, 2024 - October 10th, 2024",
+      duration: "July 2024 - October 2024",
       location: "On-site",
       description:
         "Completed a hands-on internship focused on building and enhancing UI components in React JS, gaining practical experience with modern web development workflows and collaborative coding practices.",
@@ -57,9 +57,9 @@ const Experience = () => {
       ],
     },
     {
-      company: "BVM CS IT Services",
+      company: "BVM Consultancy Services",
       position: "HTML & CSS Intern",
-      duration: "June 10th, 2024 - July 10th, 2024",
+      duration: "June 2024 - July 2024",
       location: "On-site",
       description:
         "Began my professional journey in web development by mastering the core building blocks of the web: HTML and CSS. Developed and styled static web pages from scratch, applying best practices in semantic markup and responsive design. Successfully created web pages, laying a strong foundation for future frontend development.",

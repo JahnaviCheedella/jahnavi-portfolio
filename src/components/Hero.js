@@ -56,8 +56,7 @@ const Hero = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <Box sx={{ maxWidth: 600 }}>
               <Typography
-                variant="h2"
-                component="h1"
+                variant="h3"
                 sx={{
                   fontWeight: 700,
                   mb: 2,
@@ -171,7 +170,7 @@ const Hero = () => {
                 <Button
                   variant="contained"
                   color="secondary"
-                  href="/Resume.pdf"
+                  href="/Cheedella_Jahnavi_React_and_GenAI_Developer.pdf"
                   download
                   size="large"
                   sx={{
