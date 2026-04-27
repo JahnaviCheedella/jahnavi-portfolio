@@ -24,27 +24,27 @@ const About = () => {
   const features = [
     {
       icon: <CodeIcon />,
-      title: "Frontend Development",
+      title: "Full-Stack Development",
       description:
-        "Specialized in creating responsive and interactive user interfaces using React JS, TypeScript, and Redux",
-    },
-    {
-      icon: <LaptopIcon />,
-      title: "Web Services & Integration",
-      description:
-        "Experience in connecting frontend applications with backend services through REST APIs and database interactions for seamless functionality.",
+        "Building scalable web applications using the MERN stack, with expertise in React.js, Node.js, and PostgreSQL/Oracle DB.",
     },
     {
       icon: <RocketIcon />,
-      title: "Generative AI & Prompt Engineering",
+      title: "Generative AI & RAG",
       description:
-        "Developing intelligent, context-aware solutions with LangChain and Prompt Engineering. Exploring practical applications of AI to enhance user experiences and workflows.",
+        "Designing intelligent solutions using LangChain, RAG systems, and Prompt Engineering to automate workflows and enhance accuracy.",
+    },
+    {
+      icon: <LaptopIcon />,
+      title: "API Integration",
+      description:
+        "Designing and implementing secure RESTful APIs to enable seamless data flow between complex frontend and backend systems.",
     },
     {
       icon: <PeopleIcon />,
-      title: "AI/ML Tools & Frameworks",
+      title: "Data Visualization",
       description:
-        "Passionate about integrating AI into modern applications, with a foundation in PyTorch, Pandas, and NumPy to support intelligent, data-driven solutions",
+        "Building interactive, data-driven dashboards with ApexCharts to provide real-time insights and improve decision-making.",
     },
   ];
 
@@ -106,13 +106,11 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                I’m Jahnavi Cheedella — a Frontend React Developer and
-                Generative AI enthusiast with a strong foundation in HTML5,
-                CSS3, and JavaScript (ES6+). I specialize in creating
-                responsive, dynamic, and user-friendly interfaces using
-                React.js, Next.js, TypeScript, and Redux (RTK). My focus is on
-                building clean, scalable, and high-performance web applications
-                that deliver seamless cross-device experiences.
+                I am Jahnavi Cheedella — a Full-Stack Engineer and Generative AI enthusiast
+                specializing in delivering high-performance web applications.
+                I specialize in building scalable systems using React.js, Node.js, and
+                PostgreSQL/Oracle DB, with a strong focus on seamless API integration and
+                efficient state management.
               </Typography>
               <Typography
                 variant="body1"
@@ -123,12 +121,10 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                In addition to frontend development, I explore Generative AI to
-                design intelligent, data-driven solutions. My expertise includes
-                Python, PyTorch, NLP, RAG (Retrieval-Augmented Generation),
-                LangChain, and Prompt Engineering, supported by skills in Pandas
-                and NumPy. I’m passionate about combining UI development with
-                AI-driven features to bring innovative ideas to life.
+                My passion lies at the intersection of full-stack engineering and intelligent
+                automation. I have extensive experience in developing Generative AI (RAG-based)
+                solutions, leveraging tools like LangChain, FastAPI, and ChromaDB to automate
+                complex workflows and improve system accuracy.
               </Typography>
               <Typography
                 variant="body1"
@@ -138,10 +134,9 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                I also have exposure to the MERN stack, having built an
-                application that strengthened my understanding of full-stack
-                workflows and improved my ability to work across both frontend
-                and backend components.
+                Whether it's building interactive data-driven dashboards or optimizing backend
+                queries for performance, I am dedicated to driving innovation and delivering
+                production-ready features that enhance user experience and operational efficiency.
               </Typography>
             </Box>
           </Grid>

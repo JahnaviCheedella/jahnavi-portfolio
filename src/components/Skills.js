@@ -39,36 +39,54 @@ const Skills = () => {
     {
       category: "Frontend",
       items: [
-        { name: "HTML5", icon: html },
-        { name: "CSS3", icon: css },
-        { name: "JavaScript", icon: js },
-        { name: "TypeScript", icon: ts },
         { name: "React.js", icon: react },
         { name: "Next.js", icon: next },
-        { name: "Redux(RTK)", icon: redux },
-        { name: "REST APIs", icon: api },
+        { name: "JavaScript (ES6+)", icon: js },
+        { name: "TypeScript", icon: ts },
+        { name: "HTML5", icon: html },
+        { name: "CSS3", icon: css },
+        { name: "Redux Toolkit (RTK)", icon: redux },
+        { name: "Material UI", icon: react },
+        { name: "ApexCharts", icon: api },
+      ],
+    },
+    {
+      category: "Backend & APIs",
+      items: [
+        { name: "Node.js", icon: node },
+        { name: "Express.js", icon: express },
+        { name: "RESTful APIs", icon: api },
+        { name: "API Integration", icon: api },
+        { name: "FastAPI", icon: api },
+      ],
+    },
+    {
+      category: "Databases",
+      items: [
+        { name: "PostgreSQL", icon: api },
+        { name: "Oracle Database", icon: api },
+        { name: "MongoDB", icon: mongo },
+        { name: "ChromaDB (Vector DB)", icon: rag },
       ],
     },
     {
       category: "AI / ML",
       items: [
         { name: "Python", icon: python },
-        { name: "NumPy", icon: numpy },
-        { name: "Pandas", icon: pandas },
-        { name: "PyTorch", icon: pytorch },
-        { name: "NLP", icon: nlp },
-        { name: "Gen AI", icon: genai },
-        { name: "RAG", icon: rag },
+        { name: "Generative AI", icon: genai },
         { name: "LangChain", icon: langchain },
-        { name: "Prompt/Context Engineering", icon: promptEng },
+        { name: "RAG", icon: rag },
+        { name: "NLP", icon: nlp },
+        { name: "Prompt & Context Engineering", icon: promptEng },
       ],
     },
     {
-      category: "Backend / Full Stack",
+      category: "Other Tools / DevOps",
       items: [
-        { name: "Node.js", icon: node },
-        { name: "Express.js", icon: express },
-        { name: "Mongo DB", icon: mongo },
+        { name: "Git", icon: api },
+        { name: "GitHub", icon: api },
+        { name: "Linux", icon: api },
+        { name: "Firebase", icon: api },
       ],
     },
   ];
@@ -129,7 +147,7 @@ const Skills = () => {
         <Box sx={{ mb: 5 }}>
           <Grid container spacing={2}>
             {categorizedSkills.map((group, idx) => (
-              <Grid size={{ xs: 12, md: 6 }} key={idx}>
+              <Grid size={{ xs: 12, md: 4 }} key={idx}>
                 <Card
                   sx={{
                     height: "100%",

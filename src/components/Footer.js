@@ -70,7 +70,7 @@ const Footer = () => {
                 fontSize: "0.9rem",
               }}
             >
-              React & Generative AI Developer passionate about creating amazing user experiences
+              Full-Stack Engineer & GenAI Developer passionate about creating amazing user experiences
             </Typography>
           </Box>
 

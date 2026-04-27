@@ -14,108 +14,119 @@ import { Code as CodeIcon } from "@mui/icons-material";
 const Projects = () => {
   const projects = [
     {
-      title: "Mind Vault",
+      title: "IDM Dashboards",
       description:
-        "Built a full-stack AI-powered knowledge base that lets users save notes and URLs, then ask natural language questions over their personal content using a RAG pipeline with semantic search and cited answers.",
-      technologies: ["React.js","Redux Toolkit", "Python", "FastAPI", "ChromaDB", "Gemini API"],
+        "Developed a dynamic analytics dashboard with reusable components and dropdown-based data switching for identity management workflows.",
+      technologies: ["React.js", "Material UI (MUI)", "ApexCharts", "Node.js", "REST APIs"],
       icon: <CodeIcon />,
-      category: "Fullstack + AI",
+      category: "Frontend + Node.js",
       features: [
-        "Designed a React.js UI with Redux Toolkit for state management, enabling users to ingest text notes and URLs with real-time feedback.",
-        "Built a FastAPI backend with a RAG pipeline — chunking, embedding via Gemini API, and semantic search using ChromaDB vector storage.",
-        "Implemented server-side URL fetching and HTML parsing to extract clean content from any web page for ingestion.",
-        "Returned AI-generated answers with cited source snippets, giving users full transparency on where each answer came from.",
+        "Developed a dynamic analytics dashboard with reusable components and dropdown-based data switching.",
+        "Integrated multiple APIs and implemented real-time data visualization using ApexCharts with filters like date range and operator selection.",
       ],
     },
-
     {
-      title: "Image Labs",
+      title: "Real-Time Messaging Platform (Glassmorphic UI)",
       description:
-        "Developed a production-grade image verification portal to identify real versus AI-generated images, supporting high-volume daily usage with real-time backend updates.",
-      technologies: ["React.js", "Python", "PostgreSQL", "Firebase"],
+        "Developed a full-stack real-time messaging platform featuring sub-100ms message delivery and live presence tracking.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL", "Socket.io", "JWT", "Material UI"],
       icon: <CodeIcon />,
       category: "Fullstack",
       features: [
-        "Built an interactive React.js UI for seamless image upload and verification workflows.",
-        "Integrated backend APIs using Python to process and validate image authenticity.",
-        "Designed scalable data storage using PostgreSQL and Firebase for real-time updates.",
-        "Supported 600+ daily verifications with reliable performance and responsive UI.",
+        "Developed a full-stack real-time messaging platform using React.js, Node.js, and Socket.io, featuring sub-100ms message delivery and live presence tracking across concurrent user sessions.",
+        "Implemented persistent chat history leveraging PostgreSQL and secured the application with JWT-based authentication and React Context API for seamless session and token management.",
       ],
     },
     {
-      title: "RAG Q&A Chatbot",
+      title: "Secure Expense Tracker",
       description:
-        "Implemented a Retrieval-Augmented Generation (RAG) chatbot capable of answering user questions by retrieving relevant information from documents, URLs, and databases.",
-      technologies: [
-        "React.js",
-        "Python",
-        "Flask",
-        "LangChain",
-        "FAISS",
-        "HuggingFace",
-        "Prompt Engineering",
-      ],
+        "Developed a secure expense tracking application with RESTful APIs for CRUD operations and relational data handling.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       icon: <CodeIcon />,
-      category: "Generative AI",
+      category: "Full Stack",
       features: [
-        "Built a conversational React interface for document-based Q&A interactions.",
-        "Implemented LangChain and FAISS for efficient document retrieval and context grounding.",
-        "Integrated HuggingFace models for accurate natural language responses.",
-        "Achieved 98% accuracy through effective prompt and context engineering.",
+        "Developed a secure expense tracking application with RESTful APIs for CRUD operations and relational data handling, along with a responsive UI using Material UI.",
+        "Implemented Firebase Authentication with JWT-based backend verification and optimized data processing using SQL queries for filtering and aggregation.",
       ],
     },
     {
-      title: "AI Image Generator",
+      title: "Mind Vault",
       description:
-        "Developed a text-to-image generation application that converts user prompts into high-quality images using Generative AI models.",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Express",
-        "Google Gemini API",
-        "Prompt Engineering",
-      ],
+        "Built a full-stack RAG-powered knowledge base using FastAPI and ChromaDB with semantic search and AI-generated answers.",
+      technologies: ["React.js", "Redux Toolkit", "Python", "FastAPI", "Chroma DB", "Gemini API"],
       icon: <CodeIcon />,
-      category: "Generative AI",
+      category: "Fullstack + AI",
       features: [
-        "Built a responsive React frontend for prompt-based image generation.",
-        "Integrated Google Gemini API for AI-driven image synthesis.",
-        "Optimized prompts to improve image quality and consistency.",
-        "Ensured reliable generation with a smooth and intuitive user experience.",
+        "Built a full-stack RAG-powered knowledge base using FastAPI, React.js and ChromaDB with semantic search and AI-generated answers via Gemini API.",
+        "Implemented end-to-end ingestion pipeline - chunking, embedding, and vector storage - returning cited source snippets with every AI response.",
       ],
     },
     {
       title: "E-Commerce Web Application",
       description:
-        "Created a full-stack e-commerce platform with secure authentication, real-time inventory management, and responsive UI for seamless online shopping.",
-      technologies: [
-        "React.js",
-        "Redux Toolkit(RTK)",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Socket.io",
-      ],
+        "Developed a secure e-commerce platform with authentication, product catalog, cart, and real-time inventory updates.",
+      technologies: ["React.js", "Redux Toolkit(RTK)", "Node.js", "Express", "MongoDB", "Socket.io"],
       icon: <CodeIcon />,
       category: "Full Stack (MERN)",
       features: [
-        "Developed React-based UI with product catalog, cart, and checkout features.",
-        "Implemented secure authentication and REST APIs using Node.js and Express.",
-        "Integrated real-time inventory updates with Socket.io to reduce stock mismatches.",
-        "Improved data reliability, reducing inventory errors by 60% and maintaining 99.5% API uptime.",
+        "Developed a secure e-commerce platform with authentication, product catalog, cart, and real-time inventory updates.",
+        "Implemented backend APIs and real-time features to ensure data consistency and system reliability.",
+      ],
+    },
+    {
+      title: "Image Labs",
+      description:
+        "Developed a production-grade portal to verify real vs AI-generated images with real-time backend updates.",
+      technologies: ["React.js", "Python", "PostgreSQL", "Firebase"],
+      icon: <CodeIcon />,
+      category: "Fullstack",
+      features: [
+        "Developed a production-grade portal to verify real vs AI-generated images with real-time backend updates.",
+        "Scaled to support 600+ daily verifications, ensuring reliability and responsive UI performance.",
+      ],
+    },
+    {
+      title: "RAG Q&A Chatbot",
+      description:
+        "Implemented a Retrieval-Augmented Generation chatbot to answer queries from documents, URLs, and databases.",
+      technologies: ["React.js", "Python", "Flask", "LangChain", "FAISS", "HuggingFace", "Prompt Engineering"],
+      icon: <CodeIcon />,
+      category: "Full Stack",
+      features: [
+        "Implemented a Retrieval-Augmented Generation chatbot to answer queries from documents, URLs, and databases.",
+        "Achieved high accuracy across user Q&A sessions through effective prompt and context engineering.",
+      ],
+    },
+    {
+      title: "Enterprise Frontend Systems (Merged Projects)",
+      description:
+        "Built and optimized multiple enterprise portals (Identity Management, Adjudication, Acquiring, Clustering) using modular React architecture.",
+      technologies: ["React.js", "TypeScript", "Redux Toolkit(RTK)", "Material UI"],
+      icon: <CodeIcon />,
+      category: "Frontend",
+      features: [
+        "Built and optimized multiple enterprise portals (Identity Management, Adjudication, Acquiring, Clustering) using modular React architecture.",
+        "Integrated REST APIs to enable dynamic data rendering and seamless frontend-backend communication.",
+        "Improved application performance and maintainability through efficient state management and component reuse.",
+      ],
+    },
+    {
+      title: "AI Vision & Computer Vision Systems",
+      description:
+        "Worked with Custom Object Training and Segmentation for Drone Imagery Using YOLO and deepfake detection.",
+      technologies: ["Python", "YOLO", "Label Studio", "E2ENetworks TIR", "Linux", "AWS GPU"],
+      icon: <CodeIcon />,
+      category: "AI/ML",
+      features: [
+        "Worked with Custom Object Training and Segmentation for Drone Imagery Using YOLO Model by Trained YOLOv11x models for complex segmentation tasks.",
+        "Trained and evaluated an AI model to detect real vs AI-generated faces, achieving 97% testing accuracy.",
       ],
     },
     {
       title: "AI Research & Report Agent",
       description:
-        "Built an AI-powered research agent that retrieves information from multiple sources for any given topic and presents structured summaries with clear source attribution. The system is designed to handle real-world constraints such as API failures and network latency.",
-      technologies: [
-        "React.js",
-        "Redux Toolkit",
-        "FastAPI",
-        "Python",
-        "LLM APIs",
-      ],
+        "Built an AI-powered research agent that retrieves information from multiple sources and presents structured summaries with clear source attribution.",
+      technologies: ["React.js", "Redux Toolkit", "FastAPI", "Python", "LLM APIs"],
       icon: <CodeIcon />,
       category: "Full Stack",
       features: [
@@ -125,45 +136,18 @@ const Projects = () => {
         "Designed fault-tolerant logic to handle API failures and latency gracefully.",
       ],
     },
-
     {
-      title: "Enterprise Frontend Systems (Merged Projects)",
+      title: "AI Image Generator",
       description:
-        "Designed and optimized multiple enterprise-grade frontend portals used for identity management, adjudication, acquiring, and clustering workflows.",
-      technologies: [
-        "React.js",
-        "TypeScript",
-        "Redux Toolkit(RTK)",
-        "Material UI",
-      ],
+        "Developed a text-to-image generation application that converts user prompts into high-quality images using Generative AI models.",
+      technologies: ["React.js", "Node.js", "Express", "Google Gemini API", "Prompt Engineering"],
       icon: <CodeIcon />,
-      category: "Frontend",
+      category: "Generative AI",
       features: [
-        "Built modular and reusable React components using TypeScript and Redux Toolkit.",
-        "Integrated RESTful APIs using Axios and Redux Async Thunks to manage asynchronous data fetching, error handling, and state updates across enterprise workflows.",
-        "Optimized state management to ensure consistent behavior across complex workflows.",
-        "Reduced user navigation time by 50% through improved UI flows.",
-      ],
-    },
-    {
-      title: "AI Vision & Computer Vision Systems",
-      description:
-        "Worked on computer vision systems involving object detection, segmentation, and deepfake detection using deep learning models and GPU-based training.",
-      technologies: [
-        "Vision Transformer",
-        "YOLO",
-        "Label Studio",
-        "E2ENetworks TIR",
-        "Linux",
-        "AWS GPU",
-      ],
-      icon: <CodeIcon />,
-      category: "AI/ML",
-      features: [
-        "Trained YOLOv11x models for drone imagery segmentation to detect buildings, roads, and vehicles.",
-        "Performed custom object training and annotation using Label Studio.",
-        "Built and evaluated a deepfake detection model to identify real vs AI-generated faces.",
-        "Achieved 97% testing accuracy using AWS GPU-based training and inference.",
+        "Built a responsive React frontend for prompt-based image generation.",
+        "Integrated Google Gemini API for AI-driven image synthesis.",
+        "Optimized prompts to improve image quality and consistency.",
+        "Ensured reliable generation with a smooth and intuitive user experience.",
       ],
     },
   ];

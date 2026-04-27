@@ -83,7 +83,7 @@ const Hero = () => {
                   mb: 3,
                 }}
               >
-                React & Generative AI Developer
+                Full-Stack Engineer | Generative AI & RAG
               </Typography>
 
               <Typography
@@ -95,43 +95,13 @@ const Hero = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                As a Frontend React Developer and Generative AI enthusiast, I
-                bring hands-on experience in building responsive,
-                high-performance applications. I am skilled in creating engaging
-                and consistent user interfaces optimized for cross-device
-                performance using technologies such as React.js, Next.js, Redux
-                (RTK), TypeScript, JavaScript (ES6+), HTML5, CSS3, and REST
-                APIs. My expertise extends to the full MERN stack, including
-                Node.js, Express.js, and MongoDB
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "text.secondary",
-                  mb: 3,
-                  lineHeight: 1.7,
-                  fontSize: "1.1rem",
-                }}
-              >
-                With a passion for intelligent automation, I leverage my skills
-                as a Generative AI enthusiast to deliver innovative solutions.
-                My expertise includes Python, PyTorch, NLP, RAG
-                (Retrieval-Augmented Generation), LangChain, and Prompt
-                Engineering, supported by foundation in Pandas and NumPy to
-                build data-driven AI features
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "text.secondary",
-                  mb: 3,
-                  lineHeight: 1.7,
-                  fontSize: "1.1rem",
-                }}
-              >
-                Whether it’s crafting a clean UI or integrating smart features,
-                I bring a blend of creativity, technical skill, and curiosity to
-                every project.
+                Full-Stack Developer experienced in delivering
+                scalable and high-performance web applications using React.js,
+                Node.js, and PostgreSQL. Experienced in building RESTful APIs
+                and integrating Generative AI solutions such as RAG systems to
+                automate workflows and enhance user experience. Eager to drive
+                innovation by combining full-stack engineering with AI-powered
+                solutions.
               </Typography>
 
               <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
@@ -170,7 +140,7 @@ const Hero = () => {
                 <Button
                   variant="contained"
                   color="secondary"
-                  href="/Cheedella_Jahnavi_React_and_GenAI_Developer.pdf"
+                  href="/Jahnavi_FullStack_GenAI_Engineer_Resume.pdf"
                   download
                   size="large"
                   sx={{
