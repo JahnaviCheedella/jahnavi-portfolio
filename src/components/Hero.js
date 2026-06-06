@@ -140,7 +140,7 @@ const Hero = () => {
                 <Button
                   variant="contained"
                   color="secondary"
-                  href="/Cheedella_Jahnavi_Full_Stack_GenAI_Engineer.pdf"
+                  href={`${process.env.PUBLIC_URL}/Cheedella_Jahnavi_Full_Stack_GenAI_Engineer.pdf`}
                   download
                   size="large"
                   sx={{
