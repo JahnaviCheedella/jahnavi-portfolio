@@ -140,7 +140,7 @@ const Hero = () => {
                 <Button
                   variant="contained"
                   color="secondary"
-                  href="/Jahnavi_FullStack_GenAI_Engineer_Resume.pdf"
+                  href="/Cheedella_Jahnavi_Full_Stack_GenAI_Engineer.pdf"
                   download
                   size="large"
                   sx={{
