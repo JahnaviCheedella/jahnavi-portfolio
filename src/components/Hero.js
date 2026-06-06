@@ -27,6 +27,15 @@ const Hero = () => {
     }
   };
 
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = `${process.env.PUBLIC_URL}/Cheedella_Jahnavi_Full_Stack_GenAI_Engineer.pdf`;
+    link.setAttribute("download", "Cheedella_Jahnavi_Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <Box
       id="home"
@@ -140,8 +149,7 @@ const Hero = () => {
                 <Button
                   variant="contained"
                   color="secondary"
-                  href={`${process.env.PUBLIC_URL}/Cheedella_Jahnavi_Full_Stack_GenAI_Engineer.pdf`}
-                  download
+                  onClick={downloadCV}
                   size="large"
                   sx={{
                     background:
