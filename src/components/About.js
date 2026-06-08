@@ -106,11 +106,11 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                I am Jahnavi Cheedella — a Full-Stack Engineer and Generative AI enthusiast
-                specializing in delivering high-performance web applications.
-                I specialize in building scalable systems using React.js, Node.js, and
-                PostgreSQL/Oracle DB, with a strong focus on seamless API integration and
-                efficient state management.
+                I am a Full-Stack & Generative AI Engineer passionate about
+                building scalable web applications and intelligent digital
+                solutions. I enjoy transforming complex business requirements
+                into efficient, user-friendly products that deliver real value
+                and enhance user experiences.
               </Typography>
               <Typography
                 variant="body1"
@@ -121,10 +121,11 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                My passion lies at the intersection of full-stack engineering and intelligent
-                automation. I have extensive experience in developing Generative AI (RAG-based)
-                solutions, leveraging tools like LangChain, FastAPI, and ChromaDB to automate
-                complex workflows and improve system accuracy.
+                My expertise includes React.js, Node.js, Python, PostgreSQL,
+                TypeScript, and REST APIs. I have experience developing
+                enterprise applications, analytics dashboards, workflow
+                automation solutions, and modern web platforms, with a strong
+                focus on performance, maintainability, and clean code practices.
               </Typography>
               <Typography
                 variant="body1"
@@ -134,9 +135,11 @@ const About = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                Whether it's building interactive data-driven dashboards or optimizing backend
-                queries for performance, I am dedicated to driving innovation and delivering
-                production-ready features that enhance user experience and operational efficiency.
+                I am passionate about Generative AI and have hands-on experience
+                with RAG systems, LLM integrations, vector databases, and prompt
+                engineering. I continuously explore new technologies and strive
+                to build innovative solutions that solve real-world problems and
+                drive business impact.
               </Typography>
             </Box>
           </Grid>

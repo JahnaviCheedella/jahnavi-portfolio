@@ -17,9 +17,6 @@ import redux from "../assets/redux.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import python from "../assets/python.png";
-import pandas from "../assets/pandas.png";
-import numpy from "../assets/numpy.png";
-import pytorch from "../assets/pytorch.png";
 import nlp from "../assets/nlp.png";
 import genai from "../assets/genai.png";
 import langchain from "../assets/langchain.png";
@@ -30,6 +27,13 @@ import node from "../assets/nodejs.png";
 import express from "../assets/expressjs.png";
 import mongo from "../assets/mongodb.png";
 import promptEng from "../assets/promptEng.png";
+import postgre from "../assets/postgre.png";
+import oracle from "../assets/oracle.png";
+import git from "../assets/git.png";
+import github from "../assets/github.png";
+import linux from "../assets/linux.png";
+import firebase from "../assets/fire.png";
+import charts from "../assets/bar-chart.png";
 
 const Skills = () => {
   const theme = useTheme();
@@ -47,7 +51,7 @@ const Skills = () => {
         { name: "CSS3", icon: css },
         { name: "Redux Toolkit (RTK)", icon: redux },
         { name: "Material UI", icon: react },
-        { name: "ApexCharts", icon: api },
+        { name: "ApexCharts", icon: charts },
       ],
     },
     {
@@ -63,8 +67,8 @@ const Skills = () => {
     {
       category: "Databases",
       items: [
-        { name: "PostgreSQL", icon: api },
-        { name: "Oracle Database", icon: api },
+        { name: "PostgreSQL", icon: postgre },
+        { name: "Oracle Database", icon: oracle },
         { name: "MongoDB", icon: mongo },
         { name: "ChromaDB (Vector DB)", icon: rag },
       ],
@@ -81,12 +85,12 @@ const Skills = () => {
       ],
     },
     {
-      category: "Other Tools / DevOps",
+      category: "Other Tools",
       items: [
-        { name: "Git", icon: api },
-        { name: "GitHub", icon: api },
-        { name: "Linux", icon: api },
-        { name: "Firebase", icon: api },
+        { name: "Git", icon: git },
+        { name: "GitHub", icon: github },
+        { name: "Linux", icon: linux },
+        { name: "Firebase", icon: firebase },
       ],
     },
   ];

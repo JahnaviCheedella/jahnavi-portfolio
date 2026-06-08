@@ -83,7 +83,7 @@ const Hero = () => {
                 </Box>
               </Typography>
 
-              <Typography
+              {/* <Typography
                 variant="h5"
                 component="h2"
                 sx={{
@@ -93,7 +93,7 @@ const Hero = () => {
                 }}
               >
                 Full-Stack Engineer | Generative AI & RAG
-              </Typography>
+              </Typography> */}
 
               <Typography
                 variant="body1"
@@ -104,13 +104,14 @@ const Hero = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                Full-Stack Developer experienced in delivering
-                scalable and high-performance web applications using React.js,
-                Node.js, and PostgreSQL. Experienced in building RESTful APIs
-                and integrating Generative AI solutions such as RAG systems to
-                automate workflows and enhance user experience. Eager to drive
-                innovation by combining full-stack engineering with AI-powered
-                solutions.
+                Full-Stack and Generative AI Engineer skilled in building
+                scalable web applications using React.js, Node.js, Python,
+                PostgreSQL, and REST APIs. Experienced in developing enterprise
+                applications, analytics dashboards, and AI-powered solutions
+                using Retrieval-Augmented Generation (RAG), LLM integrations,
+                vector databases, and prompt engineering. Strong background in
+                frontend development, backend services, database optimization,
+                workflow automation, and end-to-end application development.
               </Typography>
 
               <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>

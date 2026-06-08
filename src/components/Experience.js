@@ -24,46 +24,44 @@ const Experience = () => {
   const experiences = [
     {
       company: "TrueID",
-      position: "Full-Stack Developer & Generative AI Engineer",
-      duration: "October 2024 – present",
+      position: "Full-Stack & Generative AI Engineer",
+      duration: "October 2024 - present",
       location: "Hyderabad",
       description:
         "Leading the development of scalable full-stack applications and integrating advanced Generative AI solutions to automate enterprise workflows.",
       achievements: [
-        "Developed scalable full-stack applications using React.js, Node.js and PostgreSQL/Oracle DB, improving overall system performance by 30%.",
-        "Designed and implemented RESTful APIs, integrating multiple backend services to enable seamless and efficient data flow across systems.",
-        "Optimized complex SQL queries in PostgreSQL and Oracle DB, significantly reducing response time and improving application efficiency.",
-        "Built interactive data-driven dashboards with graphs and statistics using ApexCharts, enabling real-time insights and improving decision-making.",
-        "Developed and integrated Generative AI (RAG-based) solutions to automate workflows, reducing manual effort by 50%.",
-        "Applied prompt engineering and context optimization techniques, increasing AI response accuracy by 35%.",
-        "Implemented Redux Toolkit (RTK) and TypeScript for scalable state management, improving code maintainability and reducing runtime errors.",
-        "Collaborated with Agile teams to deliver production-ready features, while enhancing UI/UX performance and responsiveness, reducing user complaints by 40%.",
+        "Developed and maintained enterprise platforms including Identity Management Dashboards, Image Labs and Enterprise Business Applications, supporting business-critical workflows.",
+        "Built interactive analytics dashboards using React.js, TypeScript, Redux Toolkit, Material UI, and ApexCharts with real-time reporting and data visualization capabilities.",
+        "Designed and implemented RESTful APIs and backend services using Node.js, PostgreSQL, and Oracle Database, enabling seamless integration across multiple business systems.",
+        "Developed AI-powered workflow automation solutions using Python, Retrieval-Augmented Generation (RAG), prompt engineering, and LLM integrations.",
+        "Optimized PostgreSQL and Oracle SQL queries and collaborated with Agile teams to deliver production-ready features, enhancements, and bug fixes.",
+        "Applied prompt engineering and context optimization techniques, increasing AI response accuracy.",
       ],
     },
     {
       company: "TrueID",
       position: "React.js Intern",
-      duration: "July 2024 – September 2024",
+      duration: "July 2024 - October 2024",
       location: "Hyderabad",
       description:
         "Focused on building reusable UI components and optimizing frontend performance through modern React practices.",
       achievements: [
         "Developed reusable React components and integrated REST APIs for dynamic data rendering.",
-        "Implemented Redux Toolkit (RTK) for efficient state management and scalability.",
-        "Built responsive UI and optimized performance, improving load times and user experience.",
+        "Implemented Redux Toolkit for scalable state management and improved maintainability.",
+        "Optimized frontend performance and responsiveness to enhance user experience.",
       ],
     },
     {
-      company: "BVM IT Consultancy Services",
+      company: "BVM IT Consulting Services",
       position: "UI Developer Intern",
-      duration: "April 2024 – July 2024",
+      duration: "June 2024 - July 2024",
       location: "Hyderabad",
       description:
         "Mastered core web technologies to create high-quality, responsive web pages with a focus on semantic HTML and CSS.",
       achievements: [
-        "Created responsive web pages using HTML5, CSS3, and JavaScript with high mobile compatibility.",
-        "Used Flexbox, Grid, and media queries for adaptive layouts across devices.",
-        "Improved UI quality with semantic HTML and cross-browser compatibility.",
+        "Developed responsive web interfaces using HTML5, CSS3, JavaScript, Flexbox, and CSS Grid.",
+        "Ensured cross-browser compatibility and mobile responsiveness across multiple devices.",
+        "Improved UI quality through semantic HTML and accessibility-focused development practices.",
       ],
     },
   ];
