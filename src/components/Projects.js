@@ -322,23 +322,7 @@ const Projects = () => {
                     ))}
                   </Box>
 
-                  {/* <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      endIcon={<OpenInNewIcon />}
-                      sx={{
-                        borderColor: "primary.main",
-                        color: "primary.main",
-                        "&:hover": {
-                          background: "primary.main",
-                          color: "white",
-                        },
-                      }}
-                    >
-                      View Details
-                    </Button>
-                  </Box> */}
+                  
                 </CardContent>
               </Card>
             </Grid>

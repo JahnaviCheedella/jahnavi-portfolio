@@ -163,7 +163,7 @@ const Header = () => {
       >
         {drawer}
       </Drawer>
-      <Toolbar /> {/* Spacer for fixed AppBar */}
+      <Toolbar /> 
     </>
   );
 };

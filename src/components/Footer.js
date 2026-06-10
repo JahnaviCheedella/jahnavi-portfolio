@@ -68,7 +68,7 @@ const Footer = () => {
               sx={{
                 color: "text.disabled",
                 fontSize: "0.9rem",
-              }} 
+              }}
             >
               Full-Stack & GenAI Engineer specializing in scalable web
               applications, Generative AI solutions, and high-performance user
