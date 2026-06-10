@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/jahnavi-portfolio/static/css/main.01ad2569.css",
-    "main.js": "/jahnavi-portfolio/static/js/main.bdaa4c88.js",
+    "main.css": "/jahnavi-portfolio/static/css/main.873b3a53.css",
+    "main.js": "/jahnavi-portfolio/static/js/main.5a3b9703.js",
     "static/media/html.png": "/jahnavi-portfolio/static/media/html.48f3413f9a14b157b922.png",
     "static/media/python.png": "/jahnavi-portfolio/static/media/python.e742e694ded6c53c2a78.png",
-    "static/media/numpy.png": "/jahnavi-portfolio/static/media/numpy.fdbb46699eb0b0166319.png",
+    "static/media/postgre.png": "/jahnavi-portfolio/static/media/postgre.a7fa39912c91e079e90b.png",
     "static/media/genai.png": "/jahnavi-portfolio/static/media/genai.8d84778946bc0b0f433f.png",
     "static/media/nlp.png": "/jahnavi-portfolio/static/media/nlp.27f67937abed46e4afaf.png",
     "static/media/redux.png": "/jahnavi-portfolio/static/media/redux.21e3bf57d376d48838ea.png",
+    "static/media/linux.png": "/jahnavi-portfolio/static/media/linux.b6954a82bda92d0a1eef.png",
     "static/media/css.png": "/jahnavi-portfolio/static/media/css.140ad62eff44aa460ae5.png",
-    "static/media/pytorch.png": "/jahnavi-portfolio/static/media/pytorch.55aeff83c7f1b9deaddc.png",
+    "static/media/git.png": "/jahnavi-portfolio/static/media/git.985a7327fc7347ebdba0.png",
+    "static/media/fire.png": "/jahnavi-portfolio/static/media/fire.c0bf99eeadc99a59411f.png",
     "static/media/js.png": "/jahnavi-portfolio/static/media/js.fb30a1e0520baa3b1d25.png",
     "static/media/ts.png": "/jahnavi-portfolio/static/media/ts.87a441b9fd1a33fe6197.png",
+    "static/media/github.png": "/jahnavi-portfolio/static/media/github.d05d06a0596dcdaf48f2.png",
     "static/media/React.png": "/jahnavi-portfolio/static/media/React.98ff38735baa4c1b0381.png",
     "index.html": "/jahnavi-portfolio/index.html",
-    "main.01ad2569.css.map": "/jahnavi-portfolio/static/css/main.01ad2569.css.map",
-    "main.bdaa4c88.js.map": "/jahnavi-portfolio/static/js/main.bdaa4c88.js.map"
+    "main.873b3a53.css.map": "/jahnavi-portfolio/static/css/main.873b3a53.css.map",
+    "main.5a3b9703.js.map": "/jahnavi-portfolio/static/js/main.5a3b9703.js.map"
   },
   "entrypoints": [
-    "static/css/main.01ad2569.css",
-    "static/js/main.bdaa4c88.js"
+    "static/css/main.873b3a53.css",
+    "static/js/main.5a3b9703.js"
   ]
 }
