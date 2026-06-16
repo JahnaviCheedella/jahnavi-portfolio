@@ -7,7 +7,6 @@ import {
 
 const categoryColors = {
   "Frontend + Node.js": { color: "#61dafb", bg: "rgba(97,218,251,0.1)" },
-  // Fullstack: { color: "#68a063", bg: "rgba(104,160,99,0.1)" },
   "Full Stack + Generative AI": {
     color: "#f093fb",
     bg: "rgba(240,147,251,0.1)",
@@ -80,9 +79,9 @@ const ProjectModal = ({ project, onClose }) => {
         background: "rgba(0,0,0,0.75)",
         backdropFilter: "blur(8px)",
         display: "flex",
-        alignItems: "center",
+        alignItems: { xs: "flex-end", sm: "center" },
         justifyContent: "center",
-        p: 2,
+        p: { xs: 0, sm: 2 },
         animation: "scaleIn 0.25s ease",
       }}
     >
@@ -90,22 +89,20 @@ const ProjectModal = ({ project, onClose }) => {
         onClick={(e) => e.stopPropagation()}
         sx={{
           width: "100%",
-          maxWidth: 560,
+          maxWidth: { xs: "100%", sm: 560 },
           background: "linear-gradient(145deg, #12103a, #0d0d2b)",
           border: `1px solid ${c.color}35`,
-          borderRadius: "24px",
+          borderRadius: { xs: "20px 20px 0 0", sm: "24px" },
           overflow: "hidden",
           boxShadow: `0 30px 80px rgba(0,0,0,0.6), 0 0 40px ${c.color}20`,
           animation: "slide-in-bottom 0.3s ease",
+          display: "flex",
+          flexDirection: "column",
+          maxHeight: { xs: "92vh", sm: "90vh" },
         }}
       >
-        <Box
-          sx={{
-            height: 4,
-            background: `linear-gradient(90deg, ${c.color}, #667eea)`,
-          }}
-        />
-        <Box sx={{ p: 3.5 }}>
+        <Box sx={{ height: 4, flexShrink: 0, background: `linear-gradient(90deg, ${c.color}, #667eea)` }} />
+        <Box sx={{ p: { xs: 2.5, sm: 3.5 }, overflowY: "auto", flexGrow: 1 }}>
           <Box
             sx={{
               display: "flex",
@@ -282,7 +279,7 @@ const ProjectCard = ({ project, index, visible, onClick }) => {
           ? `linear-gradient(145deg, ${c.color}10, rgba(255,255,255,0.04))`
           : "rgba(255,255,255,0.03)",
         border: `1px solid ${hovered ? c.color + "45" : "rgba(255,255,255,0.07)"}`,
-        p: 2.5,
+        p: { xs: 2, sm: 2.5 },
         cursor: "pointer",
         transition: "all 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
         transform: hovered ? "translateY(-6px)" : "none",
@@ -321,7 +318,7 @@ const ProjectCard = ({ project, index, visible, onClick }) => {
               fontWeight: 700,
               color: "rgba(255,255,255,0.92)",
               fontFamily: "'Space Grotesk', sans-serif",
-              fontSize: "0.9rem",
+              fontSize: { xs: "0.85rem", sm: "0.9rem" },
               lineHeight: 1.3,
               mb: 0.6,
             }}
@@ -346,7 +343,7 @@ const ProjectCard = ({ project, index, visible, onClick }) => {
             display: "flex",
             alignItems: "center",
             gap: 0.4,
-            opacity: hovered ? 1 : 0,
+            opacity: { xs: 1, sm: hovered ? 1 : 0 },
             transition: "opacity 0.2s ease",
             color: c.color,
             flexShrink: 0,
@@ -631,7 +628,7 @@ const Projects = () => {
       id="projects"
       ref={sectionRef}
       sx={{
-        py: 10,
+        py: { xs: 6, md: 10 },
         background:
           "linear-gradient(180deg, #0f0f23 0%, #12103a 40%, #16213e 100%)",
         position: "relative",
@@ -686,7 +683,7 @@ const Projects = () => {
             sx={{
               display: "flex",
               justifyContent: "center",
-              gap: 1,
+              gap: { xs: 0.8, sm: 1 },
               flexWrap: "wrap",
             }}
           >
@@ -701,8 +698,8 @@ const Projects = () => {
                   key={f}
                   onClick={() => setActiveFilter(f)}
                   sx={{
-                    px: 2.5,
-                    py: 0.9,
+                    px: { xs: 1.5, sm: 2.5 },
+                    py: { xs: 0.6, sm: 0.9 },
                     borderRadius: "50px",
                     border: `1px solid ${active ? "#667eea" : "rgba(255,255,255,0.1)"}`,
                     background: active
@@ -727,7 +724,7 @@ const Projects = () => {
                     sx={{
                       color: active ? "#fff" : "rgba(255,255,255,0.45)",
                       fontWeight: active ? 700 : 500,
-                      fontSize: "0.85rem",
+                      fontSize: { xs: "0.75rem", sm: "0.85rem" },
                     }}
                   >
                     {f}
@@ -760,7 +757,7 @@ const Projects = () => {
           </Box>
         </Box>
 
-        <Grid container spacing={2}>
+        <Grid container spacing={{ xs: 1.5, sm: 2 }}>
           {filtered.map((project, index) => (
             <Grid size={{ xs: 12, sm: 6, lg: 4 }} key={project.title}>
               <ProjectCard

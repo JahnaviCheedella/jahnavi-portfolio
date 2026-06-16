@@ -1,0 +1,10 @@
+{
+  "short_name": "Jahnavi Portfolio",
+  "name": "Jahnavi Cheedella | Full-Stack & GenAI Engineer",
+  "description": "Professional portfolio of Jahnavi Cheedella - Full-Stack Developer & Generative AI Engineer",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#05050f"
+}
