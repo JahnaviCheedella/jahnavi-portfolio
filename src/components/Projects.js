@@ -17,7 +17,13 @@ const Projects = () => {
       title: "IDM Dashboards",
       description:
         "Developed a dynamic analytics dashboard with reusable components and dropdown-based data switching for identity management workflows.",
-      technologies: ["React.js", "Material UI (MUI)", "ApexCharts", "Node.js", "REST APIs"],
+      technologies: [
+        "React.js",
+        "Material UI (MUI)",
+        "ApexCharts",
+        "Node.js",
+        "REST APIs",
+      ],
       icon: <CodeIcon />,
       category: "Frontend + Node.js",
       features: [
@@ -26,10 +32,18 @@ const Projects = () => {
       ],
     },
     {
-      title: "Real-Time Messaging Platform (Glassmorphic UI)",
+      title: "Real-Time Messaging Platform",
       description:
         "Developed a full-stack real-time messaging platform featuring sub-100ms message delivery and live presence tracking.",
-      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL", "Socket.io", "JWT", "Material UI"],
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Socket.io",
+        "JWT",
+        "Material UI",
+      ],
       icon: <CodeIcon />,
       category: "Fullstack",
       features: [
@@ -38,22 +52,35 @@ const Projects = () => {
       ],
     },
     {
-      title: "Secure Expense Tracker",
+      title: "AI Task Assistant (Agentic AI Application)",
       description:
-        "Developed a secure expense tracking application with RESTful APIs for CRUD operations and relational data handling.",
-      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+        "AI-powered assistant that uses Gemini to understand user requests and dynamically execute tools through natural language conversations.",
+      technologies: [
+        "React.js",
+        "FastAPI",
+        "Python",
+        "Google Gemini API",
+        "REST APIs",
+      ],
       icon: <CodeIcon />,
-      category: "Full Stack",
+      category: "Full Stack + Generative AI",
       features: [
-        "Developed a secure expense tracking application with RESTful APIs for CRUD operations and relational data handling, along with a responsive UI using Material UI.",
-        "Implemented Firebase Authentication with JWT-based backend verification and optimized data processing using SQL queries for filtering and aggregation.",
+        "Developed an agentic AI assistant using React and FastAPI that understands natural language queries and dynamically executes tools through LLM-based function calling.",
+        "Implemented tool orchestration for task management, weather retrieval, and calculations, enabling multi-step workflows and real-time AI-assisted interactions.",
       ],
     },
     {
       title: "Mind Vault",
       description:
         "Built a full-stack RAG-powered knowledge base using FastAPI and ChromaDB with semantic search and AI-generated answers.",
-      technologies: ["React.js", "Redux Toolkit", "Python", "FastAPI", "Chroma DB", "Gemini API"],
+      technologies: [
+        "React.js",
+        "Redux Toolkit",
+        "Python",
+        "FastAPI",
+        "Chroma DB",
+        "Gemini API",
+      ],
       icon: <CodeIcon />,
       category: "Fullstack + AI",
       features: [
@@ -65,7 +92,14 @@ const Projects = () => {
       title: "E-Commerce Web Application",
       description:
         "Developed a secure e-commerce platform with authentication, product catalog, cart, and real-time inventory updates.",
-      technologies: ["React.js", "Redux Toolkit(RTK)", "Node.js", "Express", "MongoDB", "Socket.io"],
+      technologies: [
+        "React.js",
+        "Redux Toolkit(RTK)",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+      ],
       icon: <CodeIcon />,
       category: "Full Stack (MERN)",
       features: [
@@ -89,7 +123,15 @@ const Projects = () => {
       title: "RAG Q&A Chatbot",
       description:
         "Implemented a Retrieval-Augmented Generation chatbot to answer queries from documents, URLs, and databases.",
-      technologies: ["React.js", "Python", "Flask", "LangChain", "FAISS", "HuggingFace", "Prompt Engineering"],
+      technologies: [
+        "React.js",
+        "Python",
+        "Flask",
+        "LangChain",
+        "FAISS",
+        "HuggingFace",
+        "Prompt Engineering",
+      ],
       icon: <CodeIcon />,
       category: "Full Stack",
       features: [
@@ -101,7 +143,12 @@ const Projects = () => {
       title: "Enterprise Frontend Systems (Merged Projects)",
       description:
         "Built and optimized multiple enterprise portals (Identity Management, Adjudication, Acquiring, Clustering) using modular React architecture.",
-      technologies: ["React.js", "TypeScript", "Redux Toolkit(RTK)", "Material UI"],
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Redux Toolkit(RTK)",
+        "Material UI",
+      ],
       icon: <CodeIcon />,
       category: "Frontend",
       features: [
@@ -114,7 +161,14 @@ const Projects = () => {
       title: "AI Vision & Computer Vision Systems",
       description:
         "Worked with Custom Object Training and Segmentation for Drone Imagery Using YOLO and deepfake detection.",
-      technologies: ["Python", "YOLO", "Label Studio", "E2ENetworks TIR", "Linux", "AWS GPU"],
+      technologies: [
+        "Python",
+        "YOLO",
+        "Label Studio",
+        "E2ENetworks TIR",
+        "Linux",
+        "AWS GPU",
+      ],
       icon: <CodeIcon />,
       category: "AI/ML",
       features: [
@@ -126,7 +180,13 @@ const Projects = () => {
       title: "AI Research & Report Agent",
       description:
         "Built an AI-powered research agent that retrieves information from multiple sources and presents structured summaries with clear source attribution.",
-      technologies: ["React.js", "Redux Toolkit", "FastAPI", "Python", "LLM APIs"],
+      technologies: [
+        "React.js",
+        "Redux Toolkit",
+        "FastAPI",
+        "Python",
+        "LLM APIs",
+      ],
       icon: <CodeIcon />,
       category: "Full Stack",
       features: [
@@ -140,7 +200,13 @@ const Projects = () => {
       title: "AI Image Generator",
       description:
         "Developed a text-to-image generation application that converts user prompts into high-quality images using Generative AI models.",
-      technologies: ["React.js", "Node.js", "Express", "Google Gemini API", "Prompt Engineering"],
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express",
+        "Google Gemini API",
+        "Prompt Engineering",
+      ],
       icon: <CodeIcon />,
       category: "Generative AI",
       features: [
@@ -321,8 +387,6 @@ const Projects = () => {
                       </Typography>
                     ))}
                   </Box>
-
-                  
                 </CardContent>
               </Card>
             </Grid>

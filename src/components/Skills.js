@@ -67,10 +67,19 @@ const SkillChip = ({ icon, name, color, delay, visible }) => (
       },
     }}
   >
-    <img src={icon} alt={name} style={{ width: 20, height: 20, objectFit: "contain" }} />
+    <img
+      src={icon}
+      alt={name}
+      style={{ width: 20, height: 20, objectFit: "contain" }}
+    />
     <Typography
       variant="caption"
-      sx={{ color: "rgba(255,255,255,0.8)", fontWeight: 600, fontSize: "0.82rem", whiteSpace: "nowrap" }}
+      sx={{
+        color: "rgba(255,255,255,0.8)",
+        fontWeight: 600,
+        fontSize: "0.82rem",
+        whiteSpace: "nowrap",
+      }}
     >
       {name}
     </Typography>
@@ -85,12 +94,19 @@ const Skills = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setVisible(true); observer.disconnect(); } },
-      { threshold: 0.1 }
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 },
     );
     const el = sectionRef.current;
     if (el) observer.observe(el);
-    return () => { if (el) observer.unobserve(el); };
+    return () => {
+      if (el) observer.unobserve(el);
+    };
   }, []);
 
   const categorizedSkills = [
@@ -176,7 +192,6 @@ const Skills = () => {
         overflow: "hidden",
       }}
     >
-      
       <Box
         className="orb"
         sx={{
@@ -204,7 +219,6 @@ const Skills = () => {
       />
 
       <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
-        
         <Box
           className={`animate-on-scroll ${visible ? "visible" : ""}`}
           sx={{ textAlign: "center", mb: 8 }}
@@ -226,7 +240,6 @@ const Skills = () => {
           </Typography>
         </Box>
 
-        
         <Grid container spacing={3}>
           {categorizedSkills.map((group, idx) => (
             <Grid size={{ xs: 12, md: 6, lg: idx < 2 ? 6 : 4 }} key={idx}>
@@ -253,8 +266,14 @@ const Skills = () => {
                   },
                 }}
               >
-                
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 2.5 }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 1.5,
+                    mb: 2.5,
+                  }}
+                >
                   <Box
                     sx={{
                       width: 42,
@@ -287,7 +306,6 @@ const Skills = () => {
                   </Typography>
                 </Box>
 
-                
                 <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                   {group.items.map((item, i) => (
                     <SkillChip

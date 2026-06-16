@@ -43,7 +43,9 @@ const ContactCard = ({ icon, title, value, link, color, delay, visible }) => {
         cursor: link ? "pointer" : "default",
         transition: "all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
         transform: hovered ? "translateX(8px)" : "translateX(0)",
-        boxShadow: hovered ? `0 8px 30px ${color}20, 0 0 15px ${color}10` : "none",
+        boxShadow: hovered
+          ? `0 8px 30px ${color}20, 0 0 15px ${color}10`
+          : "none",
         textDecoration: "none",
         backdropFilter: "blur(10px)",
         mb: 2,
@@ -53,7 +55,6 @@ const ContactCard = ({ icon, title, value, link, color, delay, visible }) => {
       target={link && link.startsWith("http") ? "_blank" : undefined}
       rel={link ? "noopener noreferrer" : undefined}
     >
-      
       <Box
         sx={{
           width: 48,
@@ -130,11 +131,13 @@ const Contact = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
     const el = sectionRef.current;
     if (el) observer.observe(el);
-    return () => { if (el) observer.unobserve(el); };
+    return () => {
+      if (el) observer.unobserve(el);
+    };
   }, []);
 
   const handleChange = (e) => {
@@ -148,9 +151,9 @@ const Contact = () => {
     setSubmitStatus(null);
     try {
       const mailtoLink = `mailto:cheedellajahnavi@gmail.com?subject=${encodeURIComponent(
-        formData.subject
+        formData.subject,
       )}&body=${encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
       )}`;
       window.open(mailtoLink);
       setSubmitStatus("success");
@@ -212,9 +215,7 @@ const Contact = () => {
       transition: "all 0.3s ease",
       "& fieldset": {
         borderColor:
-          focusedField === name
-            ? "#667eea"
-            : "rgba(255,255,255,0.1)",
+          focusedField === name ? "#667eea" : "rgba(255,255,255,0.1)",
         transition: "border-color 0.3s ease",
       },
       "&:hover fieldset": { borderColor: "rgba(102,126,234,0.5)" },
@@ -231,9 +232,8 @@ const Contact = () => {
     "& .MuiOutlinedInput-inputMultiline": { color: "#fff" },
     transform: focusedField === name ? "translateY(-2px)" : "none",
     transition: "transform 0.3s ease",
-    boxShadow: focusedField === name
-      ? "0 8px 25px rgba(102,126,234,0.15)"
-      : "none",
+    boxShadow:
+      focusedField === name ? "0 8px 25px rgba(102,126,234,0.15)" : "none",
   });
 
   return (
@@ -248,7 +248,6 @@ const Contact = () => {
         overflow: "hidden",
       }}
     >
-      
       <Box
         className="orb"
         sx={{
@@ -287,7 +286,6 @@ const Contact = () => {
         }}
       />
 
-      
       <Box
         sx={{
           position: "absolute",
@@ -302,7 +300,6 @@ const Contact = () => {
       />
 
       <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
-        
         <Box
           className={`animate-on-scroll ${visible ? "visible" : ""}`}
           sx={{ textAlign: "center", mb: 8 }}
@@ -334,7 +331,6 @@ const Contact = () => {
         </Box>
 
         <Grid container spacing={5} alignItems="flex-start">
-          
           <Grid size={{ xs: 12, md: 5 }}>
             <Box>
               <Typography
@@ -367,7 +363,6 @@ const Contact = () => {
                 projects, or creative ideas. Feel free to reach out!
               </Typography>
 
-              
               {contactInfo.map((info, index) => (
                 <ContactCard
                   key={index}
@@ -377,7 +372,6 @@ const Contact = () => {
                 />
               ))}
 
-              
               <Box
                 className={`animate-left ${visible ? "visible" : ""}`}
                 style={{ transitionDelay: "0.5s" }}
@@ -411,7 +405,8 @@ const Contact = () => {
                         border: "1px solid rgba(255,255,255,0.1)",
                         color: "rgba(255,255,255,0.6)",
                         borderRadius: "14px",
-                        transition: "all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+                        transition:
+                          "all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
                         "&:hover": {
                           background: s.color,
                           borderColor: s.color,
@@ -429,7 +424,6 @@ const Contact = () => {
             </Box>
           </Grid>
 
-          
           <Grid size={{ xs: 12, md: 7 }}>
             <Box
               className={`animate-right ${visible ? "visible" : ""}`}
@@ -532,7 +526,6 @@ const Contact = () => {
                   sx={textFieldSx("message")}
                 />
 
-                
                 <Button
                   type="submit"
                   variant="contained"
@@ -566,8 +559,8 @@ const Contact = () => {
                       submitStatus === "success"
                         ? "linear-gradient(135deg, #00b09b, #00d4ff)"
                         : submitStatus === "error"
-                        ? "linear-gradient(135deg, #f44336, #ff6b6b)"
-                        : "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                          ? "linear-gradient(135deg, #f44336, #ff6b6b)"
+                          : "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                     boxShadow:
                       submitStatus === "success"
                         ? "0 0 25px rgba(0,212,255,0.4)"
@@ -586,13 +579,12 @@ const Contact = () => {
                   {isSubmitting
                     ? "Opening Email Client..."
                     : submitStatus === "success"
-                    ? "Email Client Opened! ✓"
-                    : submitStatus === "error"
-                    ? "Error — Try Again"
-                    : "Send Message"}
+                      ? "Email Client Opened! ✓"
+                      : submitStatus === "error"
+                        ? "Error — Try Again"
+                        : "Send Message"}
                 </Button>
 
-                
                 {submitStatus === "success" && (
                   <Box
                     sx={{

@@ -130,7 +130,6 @@ const Hero = () => {
         overflow: "hidden",
       }}
     >
-      
       <Box
         className="orb"
         sx={{
@@ -169,10 +168,8 @@ const Hero = () => {
         }}
       />
 
-      
       <Particles />
 
-      
       <Box
         sx={{
           position: "absolute",
@@ -188,10 +185,8 @@ const Hero = () => {
 
       <Container maxWidth="lg" sx={{ position: "relative", zIndex: 2 }}>
         <Grid container spacing={4} alignItems="center">
-          
           <Grid size={{ xs: 12, md: 7 }}>
             <Box sx={{ maxWidth: 680 }}>
-              
               <Box
                 className={`animate-on-scroll ${loaded ? "visible" : ""}`}
                 sx={{
@@ -231,7 +226,6 @@ const Hero = () => {
                 </Typography>
               </Box>
 
-              
               <Typography
                 variant="h1"
                 component="h1"
@@ -258,7 +252,6 @@ const Hero = () => {
                 </Box>
               </Typography>
 
-              
               <Box
                 className={`animate-on-scroll ${loaded ? "visible" : ""}`}
                 sx={{
@@ -281,7 +274,6 @@ const Hero = () => {
                 <Box className="typed-cursor" />
               </Box>
 
-              
               <Typography
                 variant="body1"
                 className={`animate-on-scroll ${loaded ? "visible" : ""}`}
@@ -300,7 +292,6 @@ const Hero = () => {
                 and AI-powered workflow automation.
               </Typography>
 
-              
               <Box
                 className={`animate-on-scroll ${loaded ? "visible" : ""}`}
                 sx={{
@@ -386,7 +377,6 @@ const Hero = () => {
                 </Button>
               </Box>
 
-              
               <Box
                 className={`animate-on-scroll ${loaded ? "visible" : ""}`}
                 sx={{
@@ -450,7 +440,6 @@ const Hero = () => {
             </Box>
           </Grid>
 
-          
           <Grid
             size={{ xs: 12, md: 5 }}
             sx={{
@@ -467,7 +456,6 @@ const Hero = () => {
                 transition: "all 0.9s ease 0.3s",
               }}
             >
-              
               <Box
                 sx={{
                   position: "absolute",
@@ -477,7 +465,7 @@ const Hero = () => {
                   animation: "rotate-slow 20s linear infinite",
                 }}
               />
-              
+
               <Box
                 sx={{
                   position: "absolute",
@@ -488,7 +476,6 @@ const Hero = () => {
                 }}
               />
 
-              
               <Box
                 sx={{
                   position: "absolute",
@@ -534,7 +521,6 @@ const Hero = () => {
                 />
               </Box>
 
-              
               <Box
                 sx={{
                   width: "100%",
@@ -578,7 +564,6 @@ const Hero = () => {
                 </Avatar>
               </Box>
 
-              
               {[
                 {
                   label: "React.js",

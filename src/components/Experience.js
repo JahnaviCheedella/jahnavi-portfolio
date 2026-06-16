@@ -22,12 +22,19 @@ const Experience = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setVisible(true); observer.disconnect(); } },
-      { threshold: 0.1 }
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 },
     );
     const el = sectionRef.current;
     if (el) observer.observe(el);
-    return () => { if (el) observer.unobserve(el); };
+    return () => {
+      if (el) observer.unobserve(el);
+    };
   }, []);
 
   const experiences = [
@@ -87,18 +94,19 @@ const Experience = () => {
       ref={sectionRef}
       sx={{
         py: 3,
-        background: "linear-gradient(180deg, #12103a 0%, #0d0d2b 50%, #0f0f23 100%)",
+        background:
+          "linear-gradient(180deg, #12103a 0%, #0d0d2b 50%, #0f0f23 100%)",
         position: "relative",
         overflow: "hidden",
       }}
     >
-      
       <Box
         className="orb"
         sx={{
           width: 600,
           height: 600,
-          background: "radial-gradient(circle, rgba(240,147,251,0.1) 0%, transparent 70%)",
+          background:
+            "radial-gradient(circle, rgba(240,147,251,0.1) 0%, transparent 70%)",
           top: "20%",
           left: "-15%",
           animationDuration: "22s",
@@ -106,7 +114,6 @@ const Experience = () => {
       />
 
       <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
-        
         <Box
           className={`animate-on-scroll ${visible ? "visible" : ""}`}
           sx={{ textAlign: "center", mb: 10 }}
@@ -128,9 +135,7 @@ const Experience = () => {
           </Typography>
         </Box>
 
-        
         <Box sx={{ position: "relative" }}>
-          
           {!isMobile && (
             <Box
               className={`animate-on-scroll ${visible ? "visible" : ""}`}
@@ -163,13 +168,12 @@ const Experience = () => {
                   justifyContent: isMobile
                     ? "flex-start"
                     : isLeft
-                    ? "flex-start"
-                    : "flex-end",
+                      ? "flex-start"
+                      : "flex-end",
                   mb: 6,
                   position: "relative",
                 }}
               >
-                
                 {!isMobile && (
                   <Box
                     sx={{
@@ -189,7 +193,6 @@ const Experience = () => {
                   />
                 )}
 
-                
                 <Box
                   sx={{
                     width: isMobile ? "100%" : "46%",
@@ -207,7 +210,6 @@ const Experience = () => {
                       position: "relative",
                     }}
                   >
-                    
                     <Box
                       sx={{
                         height: 4,
@@ -217,7 +219,6 @@ const Experience = () => {
                     />
 
                     <Box sx={{ p: 3 }}>
-                      
                       <Box
                         sx={{
                           display: "flex",
@@ -265,19 +266,51 @@ const Experience = () => {
                         />
                       </Box>
 
-                      
                       <Box
-                        sx={{ display: "flex", gap: 2, mb: 2.5, flexWrap: "wrap" }}
+                        sx={{
+                          display: "flex",
+                          gap: 2,
+                          mb: 2.5,
+                          flexWrap: "wrap",
+                        }}
                       >
-                        <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                          <CalendarIcon sx={{ fontSize: 14, color: "rgba(255,255,255,0.4)" }} />
-                          <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.4)" }}>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 0.5,
+                          }}
+                        >
+                          <CalendarIcon
+                            sx={{
+                              fontSize: 14,
+                              color: "rgba(255,255,255,0.4)",
+                            }}
+                          />
+                          <Typography
+                            variant="caption"
+                            sx={{ color: "rgba(255,255,255,0.4)" }}
+                          >
                             {exp.duration}
                           </Typography>
                         </Box>
-                        <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                          <LocationIcon sx={{ fontSize: 14, color: "rgba(255,255,255,0.4)" }} />
-                          <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.4)" }}>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 0.5,
+                          }}
+                        >
+                          <LocationIcon
+                            sx={{
+                              fontSize: 14,
+                              color: "rgba(255,255,255,0.4)",
+                            }}
+                          />
+                          <Typography
+                            variant="caption"
+                            sx={{ color: "rgba(255,255,255,0.4)" }}
+                          >
                             {exp.location}
                           </Typography>
                         </Box>
@@ -295,7 +328,6 @@ const Experience = () => {
                         {exp.description}
                       </Typography>
 
-                      
                       <Typography
                         variant="caption"
                         sx={{
@@ -309,7 +341,10 @@ const Experience = () => {
                       >
                         Key Achievements
                       </Typography>
-                      <Box component="ul" sx={{ pl: 0, m: 0, listStyle: "none" }}>
+                      <Box
+                        component="ul"
+                        sx={{ pl: 0, m: 0, listStyle: "none" }}
+                      >
                         {exp.achievements.map((achievement, idx) => (
                           <Box
                             key={idx}

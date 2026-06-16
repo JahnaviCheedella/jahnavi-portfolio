@@ -127,7 +127,6 @@ const About = () => {
         overflow: "hidden",
       }}
     >
-      
       <Box
         className="orb"
         sx={{
@@ -142,7 +141,6 @@ const About = () => {
       />
 
       <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
-        
         <Box
           className={`animate-on-scroll ${visible ? "visible" : ""}`}
           sx={{ textAlign: "center", mb: 8 }}
@@ -164,7 +162,6 @@ const About = () => {
           </Typography>
         </Box>
 
-        
         <Grid container spacing={3} sx={{ mb: 8 }}>
           {stats.map((s, i) => (
             <Grid size={{ xs: 12, sm: 4 }} key={i}>
@@ -202,7 +199,6 @@ const About = () => {
           ))}
         </Grid>
 
-        
         <Grid container spacing={6} alignItems="start">
           <Grid size={{ xs: 12, md: 6 }}>
             <Box
